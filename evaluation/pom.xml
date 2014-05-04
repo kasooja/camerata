@@ -10,8 +10,8 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>org.jfugue</groupId>
-			<artifactId>jfugue</artifactId>
+			<groupId>org.clojars.jmeeks</groupId>
+			<artifactId>jfugue-with-musicxml</artifactId>
 			<version>4.0.3</version>
 		</dependency>
 	</dependencies>
