@@ -9,8 +9,9 @@ public class Note {
 	public String stem;
 
 	@Override
-	public String toString() {		
-		return "\tNote:\t\t" + duration + "\t" + type + "\t" + voice + "\t" + stem + "\n" + pitch;
+	public String toString() {
+		return "\tNote:\t\t" + "Duration:\t" + duration + "\t" + "Type:\t" + type + "\t" + 
+				"Voice:\t" + voice + "\t" + "Stem:\t" + stem + "\n" + pitch;
 	}
-	
+
 }

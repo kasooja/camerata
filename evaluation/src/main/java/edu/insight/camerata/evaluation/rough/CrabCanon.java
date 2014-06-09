@@ -1,4 +1,4 @@
-package edu.insight.camerata.evaluation;
+package edu.insight.camerata.evaluation.rough;
 
 import java.io.File;
 import java.io.IOException;

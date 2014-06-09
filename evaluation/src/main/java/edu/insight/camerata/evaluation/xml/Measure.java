@@ -16,10 +16,11 @@ public class Measure {
 	@Override
 	public String toString() {
 		StringBuffer buffer = new StringBuffer();
-		buffer.append("\tMeasure:\t\t");
-		buffer.append(measureNumber + "\n");
-		buffer.append(attributes + "\n");
-		for(Integer noteNumber : notes.keySet()){
+		buffer.append("\tMeasure:\n");
+		buffer.append("\tMeasure Number =\t" +  measureNumber + "\n");
+		buffer.append("\tMeasure Attributes: \t" + attributes + "\n");
+		for(Integer noteNumber : notes.keySet()) {
+			buffer.append("Note: " + "\n");			
 			buffer.append("Note Number:\t" + noteNumber + "\n");
 			buffer.append(notes.get(noteNumber) + "\n");			
 		}

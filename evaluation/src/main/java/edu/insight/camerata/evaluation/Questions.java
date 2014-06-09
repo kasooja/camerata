@@ -3,6 +3,8 @@ package edu.insight.camerata.evaluation;
 import java.io.BufferedReader;
 import java.io.IOException;
 
+import edu.insight.camerata.evaluations.utils.BasicFileTools;
+
 public class Questions {
 
 	public static void main(String[] args) {
@@ -11,7 +13,6 @@ public class Questions {
 		String line = "";
 		try {
 			while((line=reader.readLine())!=null) {
-				//System.out.println(line);
 				String[] split = line.split("Question\\s*text\\s*:");
 				String question = split[1].trim();
 				System.out.println(question);

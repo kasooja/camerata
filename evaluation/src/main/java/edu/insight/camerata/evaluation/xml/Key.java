@@ -7,6 +7,6 @@ public class Key {
 	
 	@Override
 	public String toString() {
-		return "\tKey:\t\t" + fifths + "\t" + mode;
+		return "Key:\t" + "Fifths =\t" + fifths + "\t" + "Mode =\t" + mode;
 	}
 }

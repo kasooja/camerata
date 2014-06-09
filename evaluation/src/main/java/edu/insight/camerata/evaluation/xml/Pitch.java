@@ -10,7 +10,7 @@ public class Pitch {
 	@Override
 	public String toString() {
 		if(!rest)
-			return "\tPitch:\t\t" + step + "\t" + octave + "\t" + alter;
-		else return "\tPitch:\t\t" + "rest";
+			return "\tNote's Pitch:\t\t" + "Step =\t" + step + "\t" + "Octave =\t" + octave + "\t" + "Alter =\t" + alter;
+		else return "\tNote's Pitch:\t\t" + "rest";
 	}
 }

@@ -7,7 +7,7 @@ public class Clef {
 	
 	@Override
 	public String toString() {	
-		return "\tClef:\t\t" + line + "\t" + sign;
+		return "Clef:\t" + "Line =\t" + line + "\t" + "Sign =\t" + sign;
 	}
 		
 }

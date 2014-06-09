@@ -9,7 +9,7 @@ public class MeasureAttributes {
 	@Override
 	public String toString() {
 		StringBuffer buffer = new StringBuffer();
-		buffer.append("\tMeasureAttributes:\t\t" + divisions + "\t" + clef + "\t" + key);
+		buffer.append("Divisions =\t" + divisions + "\t" + clef + "\t" + key);
 		return buffer.toString().trim();
 	}
 

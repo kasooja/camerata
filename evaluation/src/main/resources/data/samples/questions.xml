@@ -1,0 +1,15 @@
+<questions task="camerata" year="2014" task_no="1"
+           organisation="University of Essex"
+           group="LAC Group">
+
+  <question number="001" music_file="f01.xml" divisions="4">
+    <text>F5</text>
+    <answer>
+    </answer>
+  </question>
+  <question number="002" music_file="f02.xml" divisions="4">
+    <text>semibreve</text>
+    <answer>
+    </answer>
+  </question>
+</questions>

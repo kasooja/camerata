@@ -1,4 +1,4 @@
-package edu.insight.camerata.evaluation;
+package edu.insight.camerata.evaluation.rough;
 
 import org.jfugue.Pattern;
 import org.jfugue.Player;
