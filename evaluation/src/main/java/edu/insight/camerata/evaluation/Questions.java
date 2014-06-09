@@ -8,6 +8,7 @@ import edu.insight.camerata.evaluation.utils.BasicFileTools;
 public class Questions {
 
 	public static void main(String[] args) {
+		//
 		String questions = "src/main/resources/TrainingQuestions";
 		BufferedReader reader = BasicFileTools.getBufferedReaderFile(questions);
 		String line = "";
