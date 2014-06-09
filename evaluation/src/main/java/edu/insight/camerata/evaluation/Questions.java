@@ -3,7 +3,7 @@ package edu.insight.camerata.evaluation;
 import java.io.BufferedReader;
 import java.io.IOException;
 
-import edu.insight.camerata.evaluations.utils.BasicFileTools;
+import edu.insight.camerata.evaluation.utils.BasicFileTools;
 
 public class Questions {
 

@@ -1,4 +1,4 @@
-package edu.insight.camerata.evaluations.utils;
+package edu.insight.camerata.evaluation.utils;
 
 
 //performs..
