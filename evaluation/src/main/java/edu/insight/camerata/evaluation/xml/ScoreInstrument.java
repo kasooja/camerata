@@ -7,7 +7,7 @@ public class ScoreInstrument {
 	
 	@Override
 	public String toString() {
-		return "\tScoreInstrument:\t\t" + id + "\t" + instrumentName;
+		return "\tScoreInstrument:\t" + id + "\t" + instrumentName;
 	}
 		
 }

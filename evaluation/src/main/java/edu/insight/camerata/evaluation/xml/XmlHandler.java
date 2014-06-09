@@ -12,11 +12,12 @@ public class XmlHandler extends DefaultHandler {
 	private Measure currentMeasure = null;
 	private MeasureAttributes currentMeasureAttributes = null;
 	private Note currentNote = null;	
+	private Clef currentClef = new Clef();
 	private Music music;
 	private boolean takeText = false;
 	private String tagStringValue = null;
 	private int noteNumber = 0;
-	
+
 
 	public XmlHandler(Music music) {
 		this.music = music;		
@@ -24,7 +25,7 @@ public class XmlHandler extends DefaultHandler {
 
 	public void startElement(String uri, String localName, String qName, Attributes attributes)
 			throws SAXException {
-		
+
 		if (qName.equalsIgnoreCase("score-partwise")) {
 		}
 
@@ -50,7 +51,7 @@ public class XmlHandler extends DefaultHandler {
 			scoreInstrument.id = attributes.getValue("id");
 			currentPart.scoreInstrument = scoreInstrument;
 		}
-		
+
 		if (qName.equalsIgnoreCase("instrument-name")) {
 			takeText = true;					
 		}
@@ -60,7 +61,7 @@ public class XmlHandler extends DefaultHandler {
 			midiInstrument.id = attributes.getValue("id");
 			currentPart.midiInstrument = midiInstrument;
 		}
-		
+
 		if (qName.equalsIgnoreCase("midi-channel")) {
 			takeText = true;					
 		}
@@ -85,16 +86,16 @@ public class XmlHandler extends DefaultHandler {
 			currentMeasure.measureNumber = Integer.parseInt(attributes.getValue("number"));
 			currentPart.measures.put(String.valueOf(currentMeasure.measureNumber), currentMeasure);
 		}
-		
+
 		if (qName.equalsIgnoreCase("attributes")) {
 			currentMeasureAttributes = new MeasureAttributes();
 			currentMeasure.attributes = currentMeasureAttributes;
 		}
-		
+
 		if (qName.equalsIgnoreCase("divisions")) {
 			takeText = true;
 		}
-		
+
 		if (qName.equalsIgnoreCase("key")) {
 			currentMeasureAttributes.key = new Key();			
 		}
@@ -102,19 +103,39 @@ public class XmlHandler extends DefaultHandler {
 		if (qName.equalsIgnoreCase("fifths")) {
 			takeText = true;
 		}
-		
+
 		if (qName.equalsIgnoreCase("mode")) {
 			takeText = true;
 		}
 
+		if (qName.equalsIgnoreCase("time")) {
+			currentMeasureAttributes.time= new Time();			
+		}
+
+		if (qName.equalsIgnoreCase("beats")) {
+			takeText = true;
+		}
+
+		if (qName.equalsIgnoreCase("beat-type")) {
+			takeText = true;
+		}
+		
+		if (qName.equalsIgnoreCase("staves")) {
+			takeText = true;
+		}
+
+		
 		if (qName.equalsIgnoreCase("clef")) {
-			currentMeasureAttributes.clef = new Clef();			
+			currentClef = new Clef();
+			if(attributes.getValue("number") != null)
+				currentClef.clefNumber = Integer.parseInt(attributes.getValue("number"));
+			currentMeasureAttributes.clefs.add(currentClef);			
 		}
 
 		if (qName.equalsIgnoreCase("sign")) {
 			takeText = true;
 		}
-		
+
 		if (qName.equalsIgnoreCase("line")) {
 			takeText = true;
 		}
@@ -128,16 +149,16 @@ public class XmlHandler extends DefaultHandler {
 		if (qName.equalsIgnoreCase("pitch")) {
 			currentNote.pitch = new Pitch();			
 		}
-		
+
 		if (qName.equalsIgnoreCase("rest")) {
 			currentNote.pitch = new Pitch();
 			currentNote.pitch.rest = true;
 		}	
-		
+
 		if (qName.equalsIgnoreCase("step")) {
 			takeText = true;
 		}
-		
+
 		if (qName.equalsIgnoreCase("alter")) {
 			takeText = true;				
 		}	
@@ -145,11 +166,11 @@ public class XmlHandler extends DefaultHandler {
 		if (qName.equalsIgnoreCase("octave")) {
 			takeText = true;				
 		}
-		
+
 		if (qName.equalsIgnoreCase("duration")) {
 			takeText = true;				
 		}	
-		
+
 		if (qName.equalsIgnoreCase("voice")) {
 			takeText = true;				
 		}	
@@ -184,10 +205,16 @@ public class XmlHandler extends DefaultHandler {
 			currentMeasureAttributes.key.fifths = Double.parseDouble(tagStringValue.trim());
 		if(qName.equalsIgnoreCase("mode"))
 			currentMeasureAttributes.key.mode = tagStringValue;
+		if(qName.equalsIgnoreCase("beats"))
+			currentMeasureAttributes.time.beats = Double.parseDouble(tagStringValue.trim());
+		if(qName.equalsIgnoreCase("beat-type"))
+			currentMeasureAttributes.time.beatType = Double.parseDouble(tagStringValue);
+		if(qName.equalsIgnoreCase("beat-type"))
+			currentMeasureAttributes.staves = Double.parseDouble(tagStringValue);		
 		if(qName.equalsIgnoreCase("sign"))
-			currentMeasureAttributes.clef.sign = tagStringValue;
+			currentClef.sign = tagStringValue;
 		if(qName.equalsIgnoreCase("line"))
-			currentMeasureAttributes.clef.line = tagStringValue;
+			currentClef.line = tagStringValue;
 		if(qName.equalsIgnoreCase("step"))
 			currentNote.pitch.step = tagStringValue;
 		if(qName.equalsIgnoreCase("alter"))
@@ -203,6 +230,8 @@ public class XmlHandler extends DefaultHandler {
 		if(qName.equalsIgnoreCase("stem"))
 			currentNote.stem = tagStringValue;
 		
+		
+
 	}
 
 	public void characters(char ch[], int start, int length) throws SAXException {

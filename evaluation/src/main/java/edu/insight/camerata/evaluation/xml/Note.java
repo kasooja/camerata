@@ -10,8 +10,8 @@ public class Note {
 
 	@Override
 	public String toString() {
-		return "\tNote:\t\t" + "Duration:\t" + duration + "\t" + "Type:\t" + type + "\t" + 
-				"Voice:\t" + voice + "\t" + "Stem:\t" + stem + "\n" + pitch;
+		return "\tNote:\t" + "Duration: " + duration + "\t" + "Type: " + type + "\t" + 
+				"Voice: " + voice + "\t" + "Stem: " + stem + "\n" + pitch;
 	}
 
 }

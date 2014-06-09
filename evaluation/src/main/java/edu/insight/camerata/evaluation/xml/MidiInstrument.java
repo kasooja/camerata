@@ -10,6 +10,6 @@ public class MidiInstrument {
 	
 	@Override
 	public String toString() {
-		return "\tMidiInstrument:\t\t" + id + "\t" + midiChannel + "\t" + midiProgram + "\t" + volume + "\t" + pan;
+		return "\tMidiInstrument: " + id + "\t" + midiChannel + "\t" + midiProgram + "\t" + volume + "\t" + pan;
 	}
 }

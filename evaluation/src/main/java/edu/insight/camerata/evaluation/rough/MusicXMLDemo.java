@@ -8,7 +8,7 @@ import org.jfugue.MusicXmlRenderer;
 import org.jfugue.Pattern;
 import org.jfugue.Player;
 
-import edu.insight.camerata.evaluation.xml.MusicXMLReader;
+import edu.insight.camerata.evaluation.xml.MusicXMLReaderTest;
 
 public class MusicXMLDemo {
 

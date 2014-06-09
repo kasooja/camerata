@@ -1,0 +1,1139 @@
+<questions task="camerata" year="2014" task_no="1"
+           runtag="lacg01" organisation="University of Essex"
+           group="LAC Group">
+
+  <question number="001" music_file="f1.xml" divisions="1">
+    <text>F# followed two crotchets later by a G</text>
+    <answer>
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="1" end_divisions="1"
+               start_bar="29" start_offset="3"
+               end_bar="30" end_offset="1" />
+    </answer>
+  </question>
+
+  <question number="002" music_file="f1.xml" divisions="1">
+    <text>harmonic interval of a perfect fourth</text>
+    <answer>
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="1" end_divisions="1"
+               start_bar="1" start_offset="1"
+               end_bar="1" end_offset="3" />
+    </answer>
+    <answer>
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="1" end_divisions="1"
+               start_bar="2" start_offset="3"
+               end_bar="2" end_offset="3" />
+    </answer>
+    <answer>
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="1" end_divisions="1"
+               start_bar="4" start_offset="3"
+               end_bar="4" end_offset="3" />
+    </answer>
+    <answer>
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="1" end_divisions="1"
+               start_bar="5" start_offset="1"
+               end_bar="5" end_offset="4" />
+    </answer>
+    <answer>
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="1" end_divisions="1"
+               start_bar="6" start_offset="3"
+               end_bar="6" end_offset="4" />
+    </answer>
+    <answer>
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="1" end_divisions="1"
+               start_bar="7" start_offset="3"
+               end_bar="7" end_offset="3" />
+    </answer>
+    <answer>
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="1" end_divisions="1"
+               start_bar="8" start_offset="1"
+               end_bar="8" end_offset="4" />
+    </answer>
+    <answer>
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="1" end_divisions="1"
+               start_bar="13" start_offset="4"
+               end_bar="13" end_offset="4" />
+    </answer>
+  </question>
+
+  <question number="003" music_file="f1.xml" divisions="1">
+    <text>imperfect cadence</text>
+    <answer>
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="1" end_divisions="1"
+               start_bar="7" start_offset="1"
+               end_bar="9" end_offset="4" />
+    </answer>
+  </question>
+
+  <question number="004" music_file="f3.xml" divisions="4">
+    <text>harmonic interval of a minor sixth</text>
+    <answer>
+      <passage start_beats="3" start_beat_type="8"
+               end_beats="3" end_beat_type="8"
+               start_divisions="4" end_divisions="4"
+               start_bar="2" start_offset="6"
+               end_bar="2" end_offset="6" />
+    </answer>
+  </question>
+
+  <question number="005" music_file="f3.xml" divisions="8">
+    <text>demisemiquaver B</text>
+    <answer>
+      <passage start_beats="3" start_beat_type="8"
+               end_beats="3" end_beat_type="8"
+               start_divisions="8" end_divisions="8"
+               start_bar="4" start_offset="3"
+               end_bar="4" end_offset="3" />
+      <passage start_beats="3" start_beat_type="8"
+               end_beats="3" end_beat_type="8"
+               start_divisions="8" end_divisions="8"
+               start_bar="8" start_offset="3"
+               end_bar="8" end_offset="3" />
+    </answer>
+  </question>
+
+  <question number="006" music_file="f3.xml" divisions="2">
+    <text>melodic octave in the bass clef</text>
+    <answer>
+      <passage start_beats="3" start_beat_type="8"
+               end_beats="3" end_beat_type="8"
+               start_divisions="2" end_divisions="2"
+               start_bar="4" start_offset="1"
+               end_bar="4" end_offset="2" />
+    </answer>
+  </question>
+
+  <question number="007" music_file="f3.xml" divisions="4">
+    <text>perfect cadence</text>
+    <answer>
+      <passage start_beats="3" start_beat_type="8"
+               end_beats="3" end_beat_type="8"
+               start_divisions="4" end_divisions="4"
+               start_bar="9" start_offset="1"
+               end_bar="13" end_offset="1" />
+    </answer>
+  </question>
+
+  <question number="008" music_file="f4.xml" divisions="2">
+    <text>interval of a melodic sixth</text>
+    <answer>
+      <passage start_beats="9" start_beat_type="8"
+               end_beats="9" end_beat_type="8"
+               start_divisions="2" end_divisions="2"
+               start_bar="7" start_offset="5"
+               end_bar="7" end_offset="6" />
+      <passage start_beats="9" start_beat_type="8"
+               end_beats="9" end_beat_type="8"
+               start_divisions="2" end_divisions="2"
+               start_bar="7" start_offset="8"
+               end_bar="7" end_offset="9" />
+      <passage start_beats="9" start_beat_type="8"
+               end_beats="9" end_beat_type="8"
+               start_divisions="2" end_divisions="2"
+               start_bar="8" start_offset="5"
+               end_bar="8" end_offset="6" />
+      <passage start_beats="9" start_beat_type="8"
+               end_beats="9" end_beat_type="8"
+               start_divisions="2" end_divisions="2"
+               start_bar="8" start_offset="8"
+               end_bar="8" end_offset="9" />
+      <passage start_beats="9" start_beat_type="8"
+               end_beats="9" end_beat_type="8"
+               start_divisions="2" end_divisions="2"
+               start_bar="9" start_offset="5"
+               end_bar="9" end_offset="6" />
+      <passage start_beats="9" start_beat_type="8"
+               end_beats="9" end_beat_type="8"
+               start_divisions="2" end_divisions="2"
+               start_bar="9" start_offset="8"
+               end_bar="9" end_offset="9" />
+      <passage start_beats="9" start_beat_type="8"
+               end_beats="9" end_beat_type="8"
+               start_divisions="2" end_divisions="2"
+               start_bar="11" start_offset="6"
+               end_bar="11" end_offset="7" />
+      <passage start_beats="9" start_beat_type="8"
+               end_beats="9" end_beat_type="8"
+               start_divisions="2" end_divisions="2"
+               start_bar="26" start_offset="6"
+               end_bar="26" end_offset="8" />
+      <passage start_beats="9" start_beat_type="8"
+               end_beats="9" end_beat_type="8"
+               start_divisions="2" end_divisions="2"
+               start_bar="26" start_offset="7"
+               end_bar="26" end_offset="9" />
+      <passage start_beats="9" start_beat_type="8"
+               end_beats="9" end_beat_type="8"
+               start_divisions="2" end_divisions="2"
+               start_bar="31" start_offset="1"
+               end_bar="31" end_offset="3" />
+    </answer>
+  </question>
+
+  <question number="009" music_file="f4.xml" divisions="2">
+    <text>G-clef F natural</text>
+    <answer>
+      <passage start_beats="9" start_beat_type="8"
+               end_beats="9" end_beat_type="8"
+               start_divisions="2" end_divisions="2"
+               start_bar="3" start_offset="4"
+               end_bar="3" end_offset="4" />
+      <passage start_beats="9" start_beat_type="8"
+               end_beats="9" end_beat_type="8"
+               start_divisions="2" end_divisions="2"
+               start_bar="17" start_offset="9"
+               end_bar="17" end_offset="9" />
+    </answer>
+  </question>
+
+  <question number="010" music_file="f4.xml" divisions="2">
+    <text>ascending G B D</text>
+    <answer>
+      <passage start_beats="9" start_beat_type="8"
+               end_beats="9" end_beat_type="8"
+               start_divisions="2" end_divisions="2"
+               start_bar="1" start_offset="1"
+               end_bar="1" end_offset="3" />
+      <passage start_beats="9" start_beat_type="8"
+               end_beats="9" end_beat_type="8"
+               start_divisions="2" end_divisions="2"
+               start_bar="5" start_offset="5"
+               end_bar="5" end_offset="7" />
+      <passage start_beats="9" start_beat_type="8"
+               end_beats="9" end_beat_type="8"
+               start_divisions="2" end_divisions="2"
+               start_bar="16" start_offset="1"
+               end_bar="16" end_offset="3" />
+      <passage start_beats="9" start_beat_type="8"
+               end_beats="9" end_beat_type="8"
+               start_divisions="2" end_divisions="2"
+               start_bar="22" start_offset="1"
+               end_bar="22" end_offset="3" />
+      <passage start_beats="9" start_beat_type="8"
+               end_beats="9" end_beat_type="8"
+               start_divisions="2" end_divisions="2"
+               start_bar="27" start_offset="1"
+               end_bar="27" end_offset="3" />
+      <passage start_beats="9" start_beat_type="8"
+               end_beats="9" end_beat_type="8"
+               start_divisions="2" end_divisions="2"
+               start_bar="27" start_offset="2"
+               end_bar="27" end_offset="4" />
+      <passage start_beats="9" start_beat_type="8"
+               end_beats="9" end_beat_type="8"
+               start_divisions="2" end_divisions="2"
+               start_bar="32" start_offset="1"
+               end_bar="32" end_offset="6" />
+    </answer>
+  </question>
+
+  <question number="011" music_file="f4.xml" divisions="2">
+    <text>dotted minim in the bass</text>
+    <answer>
+      <passage start_beats="9" start_beat_type="8"
+               end_beats="9" end_beat_type="8"
+               start_divisions="2" end_divisions="2"
+               start_bar="1" start_offset="1"
+               end_bar="1" end_offset="6" />
+      <passage start_beats="9" start_beat_type="8"
+               end_beats="9" end_beat_type="8"
+               start_divisions="2" end_divisions="2"
+               start_bar="24" start_offset="1"
+               end_bar="24" end_offset="6" />
+      <passage start_beats="9" start_beat_type="8"
+               end_beats="9" end_beat_type="8"
+               start_divisions="2" end_divisions="2"
+               start_bar="25" start_offset="1"
+               end_bar="25" end_offset="6" />
+    </answer>
+  </question>
+
+  <question number="012" music_file="f4.xml" divisions="2">
+    <text>dotted crotchet tied with a crotchet</text>
+    <answer>
+      <passage start_beats="9" start_beat_type="8"
+               end_beats="9" end_beat_type="8"
+               start_divisions="2" end_divisions="2"
+               start_bar="30" start_offset="1"
+               end_bar="30" end_offset="5" />
+    </answer>
+  </question>
+
+  <question number="013" music_file="f5.xml" divisions="2">
+    <text>perfect fifth between bass and alto voices</text>
+    <answer>
+      <passage start_beats="3" start_beat_type="4"
+               end_beats="3" end_beat_type="4"
+               start_divisions="2" end_divisions="2"
+               start_bar="1" start_offset="5"
+               end_bar="1" end_offset="6" />
+      <passage start_beats="3" start_beat_type="4"
+               end_beats="3" end_beat_type="4"
+               start_divisions="2" end_divisions="2"
+               start_bar="6" start_offset="1"
+               end_bar="6" end_offset="2" />
+      <passage start_beats="3" start_beat_type="4"
+               end_beats="3" end_beat_type="4"
+               start_divisions="2" end_divisions="2"
+               start_bar="9" start_offset="1"
+               end_bar="9" end_offset="2" />
+      <passage start_beats="3" start_beat_type="4"
+               end_beats="3" end_beat_type="4"
+               start_divisions="2" end_divisions="2"
+               start_bar="11" start_offset="1"
+               end_bar="11" end_offset="2" />
+      <passage start_beats="3" start_beat_type="4"
+               end_beats="3" end_beat_type="4"
+               start_divisions="2" end_divisions="2"
+               start_bar="17" start_offset="1"
+               end_bar="17" end_offset="3" />
+      <passage start_beats="3" start_beat_type="4"
+               end_beats="3" end_beat_type="4"
+               start_divisions="2" end_divisions="2"
+               start_bar="19" start_offset="1"
+               end_bar="19" end_offset="2" />
+    </answer>
+  </question>
+
+  <question number="014" music_file="f5.xml" divisions="4">
+    <text>3 parts in unison</text>
+    <answer>
+      <passage start_beats="3" start_beat_type="4"
+               end_beats="3" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="3" start_offset="9"
+               end_bar="3" end_offset="12" />
+      <passage start_beats="3" start_beat_type="4"
+               end_beats="3" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="5" start_offset="5"
+               end_bar="5" end_offset="5" />
+      <passage start_beats="3" start_beat_type="4"
+               end_beats="3" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="8" start_offset="1"
+               end_bar="8" end_offset="8" />
+      <passage start_beats="3" start_beat_type="4"
+               end_beats="3" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="9" start_offset="1"
+               end_bar="9" end_offset="4" />
+      <passage start_beats="3" start_beat_type="4"
+               end_beats="3" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="10" start_offset="1"
+               end_bar="10" end_offset="8" />
+      <passage start_beats="3" start_beat_type="4"
+               end_beats="3" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="10" start_offset="9"
+               end_bar="10" end_offset="12" />
+      <passage start_beats="3" start_beat_type="4"
+               end_beats="3" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="13" start_offset="5"
+               end_bar="14" end_offset="8" />
+      <passage start_beats="3" start_beat_type="4"
+               end_beats="3" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="19" start_offset="5"
+               end_bar="19" end_offset="8" />
+      <passage start_beats="3" start_beat_type="4"
+               end_beats="3" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="23" start_offset="1"
+               end_bar="23" end_offset="8" />
+    </answer>
+  </question>
+
+  <question number="015" music_file="f5.xml" divisions="4">
+    <text>sixteenth note</text>
+    <answer>
+      <passage start_beats="3" start_beat_type="4"
+               end_beats="3" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="5" start_offset="4"
+               end_bar="5" end_offset="4" />
+      <passage start_beats="3" start_beat_type="4"
+               end_beats="3" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="18" start_offset="4"
+               end_bar="18" end_offset="4" />
+      <passage start_beats="3" start_beat_type="4"
+               end_beats="3" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="20" start_offset="4"
+               end_bar="20" end_offset="4" />
+    </answer>
+  </question>
+
+  <question number="016" music_file="f5.xml" divisions="1">
+    <text>the lyrics "While love doth grant it"</text>
+    <answer>
+      <passage start_beats="3" start_beat_type="4"
+               end_beats="3" end_beat_type="4"
+               start_divisions="1" end_divisions="1"
+               start_bar="3" start_offset="1"
+               end_bar="4" end_offset="3" />
+    </answer>
+  </question>
+
+  <question number="017" music_file="f5.xml" divisions="2">
+    <text>melodic octave</text>
+    <answer>
+      <passage start_beats="3" start_beat_type="4"
+               end_beats="3" end_beat_type="4"
+               start_divisions="2" end_divisions="2"
+               start_bar="2" start_offset="5"
+               end_bar="3" end_offset="2" />
+      <passage start_beats="3" start_beat_type="4"
+               end_beats="3" end_beat_type="4"
+               start_divisions="2" end_divisions="2"
+               start_bar="6" start_offset="1"
+               end_bar="6" end_offset="4" />
+      <passage start_beats="3" start_beat_type="4"
+               end_beats="3" end_beat_type="4"
+               start_divisions="2" end_divisions="2"
+               start_bar="10" start_offset="5"
+               end_bar="11" end_offset="2" />
+      <passage start_beats="3" start_beat_type="4"
+               end_beats="3" end_beat_type="4"
+               start_divisions="2" end_divisions="2"
+               start_bar="19" start_offset="1"
+               end_bar="19" end_offset="4" />
+    </answer>
+  </question>
+
+  <question number="018" music_file="f6.xml" divisions="2">
+    <text>simultaneous rhythm in five voices</text>
+    <answer>
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="1" start_offset="7"
+               end_bar="4" end_offset="4" />
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="5" start_offset="1"
+               end_bar="9" end_offset="2" />
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="30" start_offset="1"
+               end_bar="30" end_offset="4" />
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="31" start_offset="1"
+               end_bar="31" end_offset="8" />
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="33" start_offset="1"
+               end_bar="33" end_offset="8" />
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="35" start_offset="1"
+               end_bar="37" end_offset="4" />
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="39" start_offset="1"
+               end_bar="41" end_offset="4" />
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="43" start_offset="1"
+               end_bar="44" end_offset="4" />
+    </answer>
+  </question>
+
+  <question number="019" music_file="f6.xml" divisions="2">
+    <text>quarter note then half note then quarter note in the tenor voice</text>
+    <answer>
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="2" start_offset="1"
+               end_bar="2" end_offset="8" />
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="3" start_offset="1"
+               end_bar="3" end_offset="8" />
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="5" start_offset="1"
+               end_bar="5" end_offset="8" />
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="6" start_offset="1"
+               end_bar="6" end_offset="8" />
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="7" start_offset="1"
+               end_bar="7" end_offset="8" />
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="28" start_offset="1"
+               end_bar="28" end_offset="8" />
+    </answer>
+  </question>
+ 
+  <question number="020" music_file="f6.xml" divisions="2">
+    <text>quarter note then half note then quarter note in the Soprano I voice</text>
+    <answer>
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="2" start_offset="1"
+               end_bar="2" end_offset="8" />
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="3" start_offset="1"
+               end_bar="3" end_offset="8" />
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="5" start_offset="1"
+               end_bar="5" end_offset="8" />
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="6" start_offset="1"
+               end_bar="6" end_offset="8" />
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="7" start_offset="1"
+               end_bar="7" end_offset="8" />
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="12" start_offset="1"
+               end_bar="12" end_offset="8" />
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="34" start_offset="1"
+               end_bar="134" end_offset="8" />
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="38" start_offset="1"
+               end_bar="38" end_offset="8" />
+    </answer>
+  </question>
+
+  <question number="021" music_file="f6.xml" divisions="2">
+    <text>apex in the tenor voice</text>
+    <answer>
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="7" start_offset="7"
+               end_bar="7" end_offset="8" />
+    </answer> 
+  </question>
+
+  <question number="022" music_file="f6.xml" divisions="2">
+    <text>highest note in the tenor voice</text>
+    <answer>
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="7" start_offset="7"
+               end_bar="7" end_offset="8" />
+    </answer> 
+  </question>
+
+  <question number="023" music_file="f6.xml" divisions="2">
+    <text>nadir in the tenor voice</text>
+    <answer>
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="8" start_offset="8"
+               end_bar="8" end_offset="8" />
+    </answer> 
+  </question>
+
+  <question number="024" music_file="f6.xml" divisions="2">
+    <text>lowest note in the tenor voice</text>
+    <answer>
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="8" start_offset="8"
+               end_bar="8" end_offset="8" />
+    </answer> 
+  </question>
+
+  <question number="025" music_file="f6.xml" divisions="2">
+    <text>apex in the Soprano I voice</text>
+    <answer>
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="27" start_offset="5"
+               end_bar="27" end_offset="8" />
+    </answer> 
+  </question>
+
+  <question number="026" music_file="f6.xml" divisions="2">
+    <text>nadir in the Soprano I voice</text>
+    <answer>
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="25" start_offset="5"
+               end_bar="25" end_offset="8" />
+    </answer> 
+  </question>
+
+  <question number="027" music_file="f6.xml" divisions="2">
+    <text>two or more consecutive half-steps in a voice</text>
+    <answer>
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="7" start_offset="7"
+               end_bar="8" end_offset="7" />
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="12" start_offset="1"
+               end_bar="12" end_offset="8" />
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="14" start_offset="3"
+               end_bar="15" end_offset="8" />
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="17" start_offset="3"
+               end_bar="18" end_offset="8" />
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="19" start_offset="3"
+               end_bar="20" end_offset="8" />
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="21" start_offset="5"
+               end_bar="22" end_offset="8" />
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="25" start_offset="3"
+               end_bar="26" end_offset="8" />
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="26" start_offset="3"
+               end_bar="27" end_offset="8" />
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="32" start_offset="5"
+               end_bar="33" end_offset="2" />
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="38" start_offset="1"
+               end_bar="39" end_offset="5" />
+      <passage start_beats="2" start_beat_type="2"
+               end_beats="2" end_beat_type="2"
+               start_divisions="2" end_divisions="2"
+               start_bar="42" start_offset="1"
+               end_bar="43" end_offset="4" />
+    </answer> 
+  </question>
+
+  <question number="028" music_file="f7.xml" divisions="4">
+    <text>perfect 4th leap</text>
+    <answer>
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="1" start_offset="9"
+               end_bar="1" end_offset="12" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="2" start_offset="9"
+               end_bar="2" end_offset="12" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="3" start_offset="1"
+               end_bar="3" end_offset="2" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="5" start_offset="8"
+               end_bar="5" end_offset="10" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="6" start_offset="11"
+               end_bar="6" end_offset="12" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="7" start_offset="9"
+               end_bar="7" end_offset="12" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="8" start_offset="9"
+               end_bar="8" end_offset="12" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="10" start_offset="1"
+               end_bar="10" end_offset="2" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="11" start_offset="1"
+               end_bar="11" end_offset="2" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="14" start_offset="15"
+               end_bar="15" end_offset="2" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="20" start_offset="8"
+               end_bar="20" end_offset="10" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="21" start_offset="15"
+               end_bar="21" end_offset="16" />
+    </answer> 
+  </question>
+  
+  <question number="029" music_file="f7.xml" divisions="4">
+    <text>rising 4th</text>
+    <answer>
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="1" start_offset="9"
+               end_bar="1" end_offset="12" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="2" start_offset="9"
+               end_bar="2" end_offset="12" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="3" start_offset="1"
+               end_bar="3" end_offset="2" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="5" start_offset="8"
+               end_bar="5" end_offset="10" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="6" start_offset="11"
+               end_bar="6" end_offset="12" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="7" start_offset="9"
+               end_bar="7" end_offset="12" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="8" start_offset="9"
+               end_bar="8" end_offset="12" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="10" start_offset="1"
+               end_bar="10" end_offset="2" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="11" start_offset="1"
+               end_bar="11" end_offset="2" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="14" start_offset="15"
+               end_bar="15" end_offset="2" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="20" start_offset="8"
+               end_bar="20" end_offset="10" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="21" start_offset="15"
+               end_bar="21" end_offset="16" />
+    </answer> 
+  </question>
+
+  <question number="030" music_file="f7.xml" divisions="4">
+    <text>fourth fall</text>
+    <answer>
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="6" start_offset="7"
+               end_bar="6" end_offset="11" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="14" start_offset="5"
+               end_bar="14" end_offset="6" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="16" start_offset="1"
+               end_bar="16" end_offset="10" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="18" start_offset="1"
+               end_bar="18" end_offset="10" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="20" start_offset="9"
+               end_bar="20" end_offset="12" />
+    </answer> 
+  </question>
+  
+  <question number="031" music_file="f7.xml" divisions="4">
+    <text>falling fourth</text>
+    <answer>
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="6" start_offset="7"
+               end_bar="6" end_offset="11" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="14" start_offset="5"
+               end_bar="14" end_offset="6" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="16" start_offset="1"
+               end_bar="16" end_offset="10" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="18" start_offset="1"
+               end_bar="18" end_offset="10" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="20" start_offset="9"
+               end_bar="20" end_offset="12" />
+    </answer> 
+  </question>
+  
+  <question number="032" music_file="f7.xml" divisions="4">
+    <text>descending fourth</text>
+    <answer>
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="6" start_offset="7"
+               end_bar="6" end_offset="11" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="14" start_offset="5"
+               end_bar="14" end_offset="6" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="16" start_offset="1"
+               end_bar="16" end_offset="10" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="18" start_offset="1"
+               end_bar="18" end_offset="10" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="20" start_offset="9"
+               end_bar="20" end_offset="12" />
+    </answer> 
+  </question>
+  
+  <question number="033" music_file="f7.xml" divisions="4">
+    <text>augmented fourth leap</text>
+    <answer>
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="21" start_offset="15"
+               end_bar="21" end_offset="16" />
+    </answer> 
+  </question>
+
+  <question number="034" music_file="f7.xml" divisions="4">
+    <text>a note repeated twice</text>
+    <answer>
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="6" start_offset="16"
+               end_bar="7" end_offset="2" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="14" start_offset="16"
+               end_bar="15" end_offset="1" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="20" start_offset="16"
+               end_bar="21" end_offset="1" />
+    </answer> 
+  </question>
+
+  <question number="035" music_file="f7.xml" divisions="4">
+    <text>three rising seconds followed by a falling third</text>
+    <answer>
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="1" start_offset="2"
+               end_bar="1" end_offset="6" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="1" start_offset="10"
+               end_bar="1" end_offset="14" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="2" start_offset="2"
+               end_bar="2" end_offset="6" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="2" start_offset="10"
+               end_bar="2" end_offset="14" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="5" start_offset="2"
+               end_bar="5" end_offset="6" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="5" start_offset="15"
+               end_bar="6" end_offset="8" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="7" start_offset="2"
+               end_bar="7" end_offset="6" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="7" start_offset="10"
+               end_bar="7" end_offset="14" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="8" start_offset="2"
+               end_bar="8" end_offset="6" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="8" start_offset="10"
+               end_bar="8" end_offset="14" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="13" start_offset="2"
+               end_bar="13" end_offset="6" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="16" start_offset="2"
+               end_bar="16" end_offset="6" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="16" start_offset="10"
+               end_bar="16" end_offset="14" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="18" start_offset="2"
+               end_bar="18" end_offset="6" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="18" start_offset="10"
+               end_bar="18" end_offset="14" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="19" start_offset="2"
+               end_bar="19" end_offset="6" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="19" start_offset="10"
+               end_bar="19" end_offset="14" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="20" start_offset="2"
+               end_bar="20" end_offset="6" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="20" start_offset="10"
+               end_bar="20" end_offset="14" />
+    </answer> 
+  </question>
+
+  <question number="036" music_file="f7.xml" divisions="4">
+    <text>three ascending seconds followed by a fall of a third</text>
+    <answer>
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="1" start_offset="2"
+               end_bar="1" end_offset="6" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="1" start_offset="10"
+               end_bar="1" end_offset="14" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="2" start_offset="2"
+               end_bar="2" end_offset="6" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="2" start_offset="10"
+               end_bar="2" end_offset="14" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="5" start_offset="2"
+               end_bar="5" end_offset="6" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="5" start_offset="15"
+               end_bar="6" end_offset="8" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="7" start_offset="2"
+               end_bar="7" end_offset="6" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="7" start_offset="10"
+               end_bar="7" end_offset="14" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="8" start_offset="2"
+               end_bar="8" end_offset="6" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="8" start_offset="10"
+               end_bar="8" end_offset="14" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="13" start_offset="2"
+               end_bar="13" end_offset="6" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="16" start_offset="2"
+               end_bar="16" end_offset="6" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="16" start_offset="10"
+               end_bar="16" end_offset="14" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="18" start_offset="2"
+               end_bar="18" end_offset="6" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="18" start_offset="10"
+               end_bar="18" end_offset="14" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="19" start_offset="2"
+               end_bar="19" end_offset="6" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="19" start_offset="10"
+               end_bar="19" end_offset="14" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="20" start_offset="2"
+               end_bar="20" end_offset="6" />
+      <passage start_beats="4" start_beat_type="4"
+               end_beats="4" end_beat_type="4"
+               start_divisions="4" end_divisions="4"
+               start_bar="20" start_offset="10"
+               end_bar="20" end_offset="14" />
+    </answer> 
+  </question>
+</questions>
