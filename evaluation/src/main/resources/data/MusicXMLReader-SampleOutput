@@ -1,0 +1,846 @@
+Music:		
+ There are 4 music parts. It is a score-part based music.
+Part:		P1	Soprano	S.
+	ScoreInstrument:		P1-I3	Soprano
+	MidiInstrument:		P1-I3	1	7	78.7402	0
+
+*****************
+Measure:
+	Measure Number =	1
+	Measure Attributes: 	Divisions =	2.0	Clef:	Line =	2	Sign =	G	Key:	Fifths =	-2.0	Mode =	major
+Note: 
+Note Number:	1
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	B	Octave =	4	Alter =	-1
+Note: 
+Note Number:	2
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	null
+	Note's Pitch:		rest
+Note: 
+Note Number:	3
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	D	Octave =	5	Alter =	null
+*****************
+Measure:
+	Measure Number =	2
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	C	Octave =	5	Alter =	null
+Note: 
+Note Number:	2
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	D	Octave =	5	Alter =	null
+Note: 
+Note Number:	3
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	E	Octave =	5	Alter =	-1
+*****************
+Measure:
+	Measure Number =	3
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	D	Octave =	5	Alter =	null
+Note: 
+Note Number:	2
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	null
+	Note's Pitch:		rest
+Note: 
+Note Number:	3
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	D	Octave =	5	Alter =	null
+*****************
+Measure:
+	Measure Number =	4
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	B	Octave =	4	Alter =	-1
+Note: 
+Note Number:	2
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	D	Octave =	5	Alter =	null
+Note: 
+Note Number:	3
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	C	Octave =	5	Alter =	null
+*****************
+Measure:
+	Measure Number =	5
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	B	Octave =	4	Alter =	-1
+Note: 
+Note Number:	2
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	D	Octave =	5	Alter =	null
+*****************
+Measure:
+	Measure Number =	6
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	C	Octave =	5	Alter =	null
+Note: 
+Note Number:	2
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	dow
+	Note's Pitch:		Step =	D	Octave =	5	Alter =	null
+*****************
+Measure:
+	Measure Number =	7
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	D	Octave =	5	Alter =	null
+Note: 
+Note Number:	2
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	C	Octave =	5	Alter =	null
+Note: 
+Note Number:	3
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	B	Octave =	4	Alter =	-1
+Note: 
+Note Number:	4
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	A	Octave =	4	Alter =	null
+*****************
+Measure:
+	Measure Number =	8
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	8.0	Type:	whole	Voice:	1	Stem:	null
+	Note's Pitch:		Step =	B	Octave =	4	Alter =	-1
+*****************
+Measure:
+	Measure Number =	9
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	A	Octave =	4	Alter =	null
+Note: 
+Note Number:	2
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	D	Octave =	5	Alter =	null
+Note: 
+Note Number:	3
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	D	Octave =	5	Alter =	null
+Note: 
+Note Number:	4
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	D	Octave =	5	Alter =	null
+*****************
+Measure:
+	Measure Number =	10
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	8.0	Type:	whole	Voice:	1	Stem:	null
+	Note's Pitch:		Step =	F	Octave =	5	Alter =	null
+*****************
+Measure:
+	Measure Number =	11
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	null
+	Note's Pitch:		rest
+Note: 
+Note Number:	2
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	C	Octave =	5	Alter =	null
+Note: 
+Note Number:	3
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	C	Octave =	5	Alter =	null
+Note: 
+Note Number:	4
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	C	Octave =	5	Alter =	null
+*****************
+Measure:
+	Measure Number =	12
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	E	Octave =	5	Alter =	-1
+Note: 
+Note Number:	2
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	E	Octave =	5	Alter =	-1
+*****************
+Measure:
+	Measure Number =	13
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	B	Octave =	4	Alter =	-1
+Note: 
+Note Number:	2
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	G	Octave =	4	Alter =	null
+Note: 
+Note Number:	3
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	B	Octave =	4	Alter =	-1
+Note: 
+Note Number:	4
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	C	Octave =	5	Alter =	null
+*****************
+Measure:
+	Measure Number =	14
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	8.0	Type:	whole	Voice:	1	Stem:	null
+	Note's Pitch:		Step =	D	Octave =	5	Alter =	null
+*****************
+Measure:
+	Measure Number =	15
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	8.0	Type:	whole	Voice:	1	Stem:	null
+	Note's Pitch:		Step =	D	Octave =	5	Alter =	null
+*****************
+Measure:
+	Measure Number =	16
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	8.0	Type:	whole	Voice:	1	Stem:	null
+	Note's Pitch:		Step =	B	Octave =	4	Alter =	null
+ ------------------------------ 
+Part:		P2	Alto	A.
+	ScoreInstrument:		P2-I3	Alto
+	MidiInstrument:		P2-I3	2	7	78.7402	0
+
+*****************
+Measure:
+	Measure Number =	1
+	Measure Attributes: 	Divisions =	2.0	Clef:	Line =	2	Sign =	G	Key:	Fifths =	-2.0	Mode =	major
+Note: 
+Note Number:	1
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	F	Octave =	4	Alter =	null
+Note: 
+Note Number:	2
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	null
+	Note's Pitch:		rest
+Note: 
+Note Number:	3
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	B	Octave =	4	Alter =	-1
+*****************
+Measure:
+	Measure Number =	2
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	A	Octave =	4	Alter =	null
+Note: 
+Note Number:	2
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	B	Octave =	4	Alter =	-1
+Note: 
+Note Number:	3
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	A	Octave =	4	Alter =	null
+*****************
+Measure:
+	Measure Number =	3
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	B	Octave =	4	Alter =	-1
+Note: 
+Note Number:	2
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	F	Octave =	4	Alter =	null
+*****************
+Measure:
+	Measure Number =	4
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	G	Octave =	4	Alter =	null
+Note: 
+Note Number:	2
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	F	Octave =	4	Alter =	null
+Note: 
+Note Number:	3
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	F	Octave =	4	Alter =	null
+*****************
+Measure:
+	Measure Number =	5
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	F	Octave =	4	Alter =	null
+Note: 
+Note Number:	2
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	B	Octave =	4	Alter =	-1
+*****************
+Measure:
+	Measure Number =	6
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	A	Octave =	4	Alter =	null
+Note: 
+Note Number:	2
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	B	Octave =	4	Alter =	-1
+*****************
+Measure:
+	Measure Number =	7
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	B	Octave =	4	Alter =	-1
+Note: 
+Note Number:	2
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	A	Octave =	4	Alter =	null
+Note: 
+Note Number:	3
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	G	Octave =	4	Alter =	null
+Note: 
+Note Number:	4
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	F	Octave =	4	Alter =	null
+*****************
+Measure:
+	Measure Number =	8
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	8.0	Type:	whole	Voice:	1	Stem:	null
+	Note's Pitch:		Step =	G	Octave =	4	Alter =	null
+*****************
+Measure:
+	Measure Number =	9
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	8.0	Type:	whole	Voice:	1	Stem:	null
+	Note's Pitch:		Step =	F	Octave =	4	Alter =	1
+*****************
+Measure:
+	Measure Number =	10
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	8.0	Type:	whole	Voice:	1	Stem:	null
+	Note's Pitch:		rest
+*****************
+Measure:
+	Measure Number =	11
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	null
+	Note's Pitch:		rest
+Note: 
+Note Number:	2
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	A	Octave =	4	Alter =	null
+Note: 
+Note Number:	3
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	A	Octave =	4	Alter =	null
+Note: 
+Note Number:	4
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	A	Octave =	4	Alter =	null
+*****************
+Measure:
+	Measure Number =	12
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	C	Octave =	5	Alter =	null
+Note: 
+Note Number:	2
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	G	Octave =	4	Alter =	null
+*****************
+Measure:
+	Measure Number =	13
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	G	Octave =	4	Alter =	null
+Note: 
+Note Number:	2
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	G	Octave =	4	Alter =	null
+*****************
+Measure:
+	Measure Number =	14
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	F	Octave =	4	Alter =	null
+Note: 
+Note Number:	2
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	D	Octave =	4	Alter =	null
+Note: 
+Note Number:	3
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	G	Octave =	4	Alter =	null
+*****************
+Measure:
+	Measure Number =	15
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	G	Octave =	4	Alter =	null
+Note: 
+Note Number:	2
+	Note:		Duration:	1.0	Type:	eighth	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	F	Octave =	4	Alter =	1
+Note: 
+Note Number:	3
+	Note:		Duration:	1.0	Type:	eighth	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	E	Octave =	4	Alter =	null
+Note: 
+Note Number:	4
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	F	Octave =	4	Alter =	1
+*****************
+Measure:
+	Measure Number =	16
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	G	Octave =	4	Alter =	null
+Note: 
+Note Number:	2
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	G	Octave =	4	Alter =	null
+Note: 
+Note Number:	3
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	G	Octave =	4	Alter =	null
+Note: 
+Note Number:	4
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	G	Octave =	4	Alter =	null
+ ------------------------------ 
+Part:		P3	Tenor	T.
+	ScoreInstrument:		P3-I3	Tenor
+	MidiInstrument:		P3-I3	3	7	78.7402	0
+
+*****************
+Measure:
+	Measure Number =	1
+	Measure Attributes: 	Divisions =	2.0	Clef:	Line =	2	Sign =	G	Key:	Fifths =	-2.0	Mode =	major
+Note: 
+Note Number:	1
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	B	Octave =	3	Alter =	-1
+Note: 
+Note Number:	2
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	null
+	Note's Pitch:		rest
+Note: 
+Note Number:	3
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	B	Octave =	3	Alter =	-1
+*****************
+Measure:
+	Measure Number =	2
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	F	Octave =	4	Alter =	null
+Note: 
+Note Number:	2
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	D	Octave =	4	Alter =	null
+Note: 
+Note Number:	3
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	C	Octave =	4	Alter =	null
+*****************
+Measure:
+	Measure Number =	3
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	B	Octave =	3	Alter =	-1
+Note: 
+Note Number:	2
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	B	Octave =	3	Alter =	-1
+*****************
+Measure:
+	Measure Number =	4
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	G	Octave =	3	Alter =	null
+Note: 
+Note Number:	2
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	B	Octave =	3	Alter =	-1
+Note: 
+Note Number:	3
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	A	Octave =	3	Alter =	null
+*****************
+Measure:
+	Measure Number =	5
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	B	Octave =	3	Alter =	-1
+Note: 
+Note Number:	2
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	F	Octave =	4	Alter =	null
+*****************
+Measure:
+	Measure Number =	6
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	F	Octave =	4	Alter =	null
+Note: 
+Note Number:	2
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	F	Octave =	4	Alter =	null
+*****************
+Measure:
+	Measure Number =	7
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	8.0	Type:	whole	Voice:	1	Stem:	null
+	Note's Pitch:		Step =	D	Octave =	4	Alter =	null
+*****************
+Measure:
+	Measure Number =	8
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	8.0	Type:	whole	Voice:	1	Stem:	null
+	Note's Pitch:		Step =	D	Octave =	4	Alter =	null
+*****************
+Measure:
+	Measure Number =	9
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	D	Octave =	4	Alter =	null
+Note: 
+Note Number:	2
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	null
+	Note's Pitch:		rest
+Note: 
+Note Number:	3
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	D	Octave =	4	Alter =	null
+*****************
+Measure:
+	Measure Number =	10
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	D	Octave =	4	Alter =	null
+Note: 
+Note Number:	2
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	D	Octave =	4	Alter =	null
+Note: 
+Note Number:	3
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	F	Octave =	4	Alter =	null
+*****************
+Measure:
+	Measure Number =	11
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	F	Octave =	4	Alter =	null
+Note: 
+Note Number:	2
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	F	Octave =	4	Alter =	null
+*****************
+Measure:
+	Measure Number =	12
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	8.0	Type:	whole	Voice:	1	Stem:	null
+	Note's Pitch:		Step =	C	Octave =	4	Alter =	null
+*****************
+Measure:
+	Measure Number =	13
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	null
+	Note's Pitch:		rest
+Note: 
+Note Number:	2
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	G	Octave =	3	Alter =	null
+*****************
+Measure:
+	Measure Number =	14
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	B	Octave =	3	Alter =	-1
+Note: 
+Note Number:	2
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	B	Octave =	3	Alter =	-1
+*****************
+Measure:
+	Measure Number =	15
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	8.0	Type:	whole	Voice:	1	Stem:	null
+	Note's Pitch:		Step =	A	Octave =	3	Alter =	null
+*****************
+Measure:
+	Measure Number =	16
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	G	Octave =	3	Alter =	null
+Note: 
+Note Number:	2
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	null
+	Note's Pitch:		rest
+Note: 
+Note Number:	3
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	G	Octave =	3	Alter =	null
+ ------------------------------ 
+Part:		P4	Bass	B.
+	ScoreInstrument:		P4-I3	Bass
+	MidiInstrument:		P4-I3	4	7	78.7402	0
+
+*****************
+Measure:
+	Measure Number =	1
+	Measure Attributes: 	Divisions =	2.0	Clef:	Line =	4	Sign =	F	Key:	Fifths =	-2.0	Mode =	major
+Note: 
+Note Number:	1
+	Note:		Duration:	8.0	Type:	whole	Voice:	1	Stem:	null
+	Note's Pitch:		Step =	B	Octave =	2	Alter =	-1
+*****************
+Measure:
+	Measure Number =	2
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	8.0	Type:	whole	Voice:	1	Stem:	null
+	Note's Pitch:		rest
+*****************
+Measure:
+	Measure Number =	3
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	null
+	Note's Pitch:		rest
+Note: 
+Note Number:	2
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	B	Octave =	2	Alter =	-1
+*****************
+Measure:
+	Measure Number =	4
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	E	Octave =	3	Alter =	-1
+Note: 
+Note Number:	2
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	B	Octave =	2	Alter =	-1
+Note: 
+Note Number:	3
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	F	Octave =	3	Alter =	null
+*****************
+Measure:
+	Measure Number =	5
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	8.0	Type:	whole	Voice:	1	Stem:	null
+	Note's Pitch:		Step =	B	Octave =	2	Alter =	-1
+*****************
+Measure:
+	Measure Number =	6
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	F	Octave =	3	Alter =	null
+Note: 
+Note Number:	2
+	Note:		Duration:	4.0	Type:	half	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	D	Octave =	3	Alter =	null
+*****************
+Measure:
+	Measure Number =	7
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	8.0	Type:	whole	Voice:	1	Stem:	null
+	Note's Pitch:		Step =	G	Octave =	3	Alter =	null
+*****************
+Measure:
+	Measure Number =	8
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	8.0	Type:	whole	Voice:	1	Stem:	null
+	Note's Pitch:		Step =	G	Octave =	3	Alter =	null
+*****************
+Measure:
+	Measure Number =	9
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	8.0	Type:	whole	Voice:	1	Stem:	null
+	Note's Pitch:		Step =	D	Octave =	3	Alter =	null
+*****************
+Measure:
+	Measure Number =	10
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	null
+	Note's Pitch:		rest
+Note: 
+Note Number:	2
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	D	Octave =	3	Alter =	null
+Note: 
+Note Number:	3
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	D	Octave =	3	Alter =	null
+Note: 
+Note Number:	4
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	D	Octave =	3	Alter =	null
+*****************
+Measure:
+	Measure Number =	11
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	8.0	Type:	whole	Voice:	1	Stem:	null
+	Note's Pitch:		Step =	F	Octave =	3	Alter =	null
+*****************
+Measure:
+	Measure Number =	12
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	null
+	Note's Pitch:		rest
+Note: 
+Note Number:	2
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	C	Octave =	3	Alter =	null
+Note: 
+Note Number:	3
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	C	Octave =	3	Alter =	null
+Note: 
+Note Number:	4
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	C	Octave =	3	Alter =	null
+*****************
+Measure:
+	Measure Number =	13
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	6.0	Type:	half	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	E	Octave =	3	Alter =	-1
+Note: 
+Note Number:	2
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	down
+	Note's Pitch:		Step =	E	Octave =	3	Alter =	-1
+*****************
+Measure:
+	Measure Number =	14
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	6.0	Type:	half	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	B	Octave =	2	Alter =	-1
+Note: 
+Note Number:	2
+	Note:		Duration:	2.0	Type:	quarter	Voice:	1	Stem:	up
+	Note's Pitch:		Step =	C	Octave =	3	Alter =	null
+*****************
+Measure:
+	Measure Number =	15
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	8.0	Type:	whole	Voice:	1	Stem:	null
+	Note's Pitch:		Step =	D	Octave =	3	Alter =	null
+*****************
+Measure:
+	Measure Number =	16
+	Measure Attributes: 	null
+Note: 
+Note Number:	1
+	Note:		Duration:	8.0	Type:	whole	Voice:	1	Stem:	null
+	Note's Pitch:		Step =	G	Octave =	2	Alter =	null
+ ------------------------------
