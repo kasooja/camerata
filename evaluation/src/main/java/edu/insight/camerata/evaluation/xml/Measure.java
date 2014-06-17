@@ -3,7 +3,7 @@ package edu.insight.camerata.evaluation.xml;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class Measure {
+public class Measure {	
 
 	public Map<Integer, Note> notes;
 	public int measureNumber;
