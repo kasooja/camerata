@@ -5,7 +5,7 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
-public class XmlHandler extends DefaultHandler {
+public class MusicXmlHandler extends DefaultHandler {
 
 	private String currentPartId = null;
 	private Part currentPart = null;
@@ -19,7 +19,7 @@ public class XmlHandler extends DefaultHandler {
 	private int noteNumber = 0;
 
 
-	public XmlHandler(Music music) {
+	public MusicXmlHandler(Music music) {
 		this.music = music;		
 	}
 

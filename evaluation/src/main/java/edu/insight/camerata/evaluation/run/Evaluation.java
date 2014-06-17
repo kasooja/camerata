@@ -1,25 +1,29 @@
-package edu.insight.camerata.evaluation.xml;
+package edu.insight.camerata.evaluation.run;
 
 import org.xml.sax.helpers.DefaultHandler;
 
+import edu.insight.camerata.evaluation.xml.Measure;
+import edu.insight.camerata.evaluation.xml.Music;
+import edu.insight.camerata.evaluation.xml.MusicReader;
+import edu.insight.camerata.evaluation.xml.Part;
+import edu.insight.camerata.evaluation.xml.MusicXmlHandler;
 
-public class Answers {
-	String start_time_sig;
-	String end_time_sig;
-	double start_divs;
-	double end_divs;
+public class Evaluation {
 
-	public static Music music1 = new Music();
-	public static String dataPath1 =  "src/main/resources/data/training/f4.xml";
-
-	Part first_part;
-	Measure first_measure;
-	Part end_part;
-	Measure end_measure;
-
-
-	public void get_ans(){
-
+	private String start_time_sig;
+	private String end_time_sig;
+	private double start_divs;
+	private double end_divs;
+	private static Music music1 = new Music();
+	private static String dataPath =  "src/main/resources/data/training/f4.xml";
+	private Part first_part;
+	private Measure first_measure;
+	private Part end_part;
+	private Measure end_measure;
+	
+	public void get_ans(String question) {
+		//String entity = "B";
+		//String type = 
 		// To fetch start time signature
 		for (String key : music1.musicPartMap.keySet()) {
 			first_part = music1.musicPartMap.get(key);
@@ -51,19 +55,15 @@ public class Answers {
 		end_divs = end_measure.attributes.time.beatType / 4;
 		System.out.println("End Divisions : " + end_divs);		
 
-
-		
-		
 	}
-
+	
 	public static void main(String []args){
-		/* Object creation */
-		DefaultHandler handler1 = new XmlHandler(music1);
-		MusicReader lReader1 = new MusicReader(dataPath1);
-		lReader1.read(handler1);
-
+		DefaultHandler handler = new MusicXmlHandler(music1);
+		MusicReader lReader = new MusicReader(dataPath);
+		lReader.read(handler);
+		String question = "demisemiquaver B";		
 		Answers ans = new Answers();
-
-		ans.get_ans(); 
+		ans.get_ans(question);		
 	}
+	
 }
