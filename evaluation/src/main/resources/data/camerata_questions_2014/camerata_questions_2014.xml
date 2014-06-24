@@ -1,0 +1,1006 @@
+<?xml version="1.0" ?>
+<questions group="LAC Group" organisation="University of Essex" task="camerata" task_no="1" year="2014">
+  
+
+
+  <question divisions="2" music_file="bach_minuet_in_g_bwv_anh114.xml" number="1">
+    <text>G5</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="bach_minuet_in_g_bwv_anh114.xml" number="2">
+    <text>quarter note rest</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="bach_minuet_in_g_bwv_anh114.xml" number="3">
+    <text>half note C</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="bach_minuet_in_g_bwv_anh114.xml" number="4">
+    <text>quarter note B5</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="2" music_file="bach_minuet_in_g_bwv_anh114.xml" number="5">
+    <text>D4 in the right hand</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="2" music_file="bach_minuet_in_g_bwv_anh114.xml" number="6">
+    <text>D followed by G</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="2" music_file="bach_minuet_in_g_bwv_anh114.xml" number="7">
+    <text>rising major sixth</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="bach_minuet_in_g_bwv_anh114.xml" number="8">
+    <text>tonic triad</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="bach_minuet_in_g_bwv_anh114.xml" number="9">
+    <text>Ib triad</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="bach_minuet_in_g_bwv_anh114.xml" number="10">
+    <text>melody with accompaniment</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="2" music_file="charpentier_te_deum_preludium.xml" number="11">
+    <text>E</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="charpentier_te_deum_preludium.xml" number="12">
+    <text>dotted half note</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="2" music_file="charpentier_te_deum_preludium.xml" number="13">
+    <text>dotted quarter note</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="2" music_file="charpentier_te_deum_preludium.xml" number="14">
+    <text>eighth note G</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="charpentier_te_deum_preludium.xml" number="15">
+    <text>half note D in the viola</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="2" music_file="charpentier_te_deum_preludium.xml" number="16">
+    <text>quarter note G followed by eighth note G</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="2" music_file="charpentier_te_deum_preludium.xml" number="17">
+    <text>melodic descending fifth</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="2" music_file="charpentier_te_deum_preludium.xml" number="18">
+    <text>harmonic second</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="charpentier_te_deum_preludium.xml" number="19">
+    <text>perfect cadence</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="charpentier_te_deum_preludium.xml" number="20">
+    <text>triad in first inversion</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="corelli_allegro_tr_clementi.xml" number="21">
+    <text>B5</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="corelli_allegro_tr_clementi.xml" number="22">
+    <text>semiquaver rest</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="corelli_allegro_tr_clementi.xml" number="23">
+    <text>D# crotchet</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="corelli_allegro_tr_clementi.xml" number="24">
+    <text>semiquaver G#</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="corelli_allegro_tr_clementi.xml" number="25">
+    <text>treble clef A sharp</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="corelli_allegro_tr_clementi.xml" number="26">
+    <text>bass clef D sharp</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="corelli_allegro_tr_clementi.xml" number="27">
+    <text>G sharp followed by B</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="corelli_allegro_tr_clementi.xml" number="28">
+    <text>D4 followed by C4</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="corelli_allegro_tr_clementi.xml" number="29">
+    <text>rising melodic octave</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="corelli_allegro_tr_clementi.xml" number="30">
+    <text>melody with accompaniment</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="cutting_galliard_11.xml" number="31">
+    <text>B4</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="cutting_galliard_11.xml" number="32">
+    <text>E#</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="cutting_galliard_11.xml" number="33">
+    <text>dotted minim</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="cutting_galliard_11.xml" number="34">
+    <text>dotted quaver</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="2" music_file="cutting_galliard_11.xml" number="35">
+    <text>dotted crotchet A sharp</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="cutting_galliard_11.xml" number="36">
+    <text>semiquaver D natural</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="cutting_galliard_11.xml" number="37">
+    <text>dotted quaver E followed by semiquaver F sharp</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="cutting_galliard_11.xml" number="38">
+    <text>crotchet rest followed by crotchet</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="cutting_galliard_11.xml" number="39">
+    <text>falling major third</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="cutting_galliard_11.xml" number="40">
+    <text>nineteenth</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="2" music_file="lassus_psalm_50.xml" number="41">
+    <text>E5</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="lassus_psalm_50.xml" number="42">
+    <text>dotted minim</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="lassus_psalm_50.xml" number="43">
+    <text>A# crotchet</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="lassus_psalm_50.xml" number="44">
+    <text>F# semibreve</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="lassus_psalm_50.xml" number="45">
+    <text>F3 sharp in the &quot;Alt&quot;</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="lassus_psalm_50.xml" number="46">
+    <text>minim on the word &quot;Der&quot;</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="lassus_psalm_50.xml" number="47">
+    <text>minim B on the word &quot;im&quot;</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="lassus_psalm_50.xml" number="48">
+    <text>minim followed by a minim</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="lassus_psalm_50.xml" number="49">
+    <text>melodic rising minor third</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="lassus_psalm_50.xml" number="50">
+    <text>melodic minor sixth</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="monteverdi_lasciatemi_morire.xml" number="51">
+    <text>A natural</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="monteverdi_lasciatemi_morire.xml" number="52">
+    <text>whole note</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="monteverdi_lasciatemi_morire.xml" number="53">
+    <text>half note Db</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="monteverdi_lasciatemi_morire.xml" number="54">
+    <text>fermata A natural</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="monteverdi_lasciatemi_morire.xml" number="55">
+    <text>quarter note F in the Alto</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="monteverdi_lasciatemi_morire.xml" number="56">
+    <text>eighth note on the word &quot;che&quot;</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="monteverdi_lasciatemi_morire.xml" number="57">
+    <text>dotted quarter note followed by eighth note</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="monteverdi_lasciatemi_morire.xml" number="58">
+    <text>falling minor sixth</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="monteverdi_lasciatemi_morire.xml" number="59">
+    <text>minor ninth</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="monteverdi_lasciatemi_morire.xml" number="60">
+    <text>polyphony</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="8" music_file="scarlatti_a_se_florindo.xml" number="61">
+    <text>C flat</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="scarlatti_a_se_florindo.xml" number="62">
+    <text>dotted quarter note</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="scarlatti_a_se_florindo.xml" number="63">
+    <text>eighth note B flat</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="scarlatti_a_se_florindo.xml" number="64">
+    <text>staccato B flat</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="scarlatti_a_se_florindo.xml" number="65">
+    <text>marcato D flat</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="scarlatti_a_se_florindo.xml" number="66">
+    <text>E flat in the voice</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="scarlatti_a_se_florindo.xml" number="67">
+    <text>word &quot;Se&quot; on an A flat</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="scarlatti_a_se_florindo.xml" number="68">
+    <text>dotted quarter note followed by A4</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="scarlatti_a_se_florindo.xml" number="69">
+    <text>octave leap</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="scarlatti_a_se_florindo.xml" number="70">
+    <text>seventh</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="scarlatti_k466.xml" number="71">
+    <text>G1</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="2" music_file="scarlatti_k466.xml" number="72">
+    <text>G flat</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="scarlatti_k466.xml" number="73">
+    <text>semibreve</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="scarlatti_k466.xml" number="74">
+    <text>minim F</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="scarlatti_k466.xml" number="75">
+    <text>F trill</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="scarlatti_k466.xml" number="76">
+    <text>minim C in the bass</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="scarlatti_k466.xml" number="77">
+    <text>crotchet followed by semibreve</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="2" music_file="scarlatti_k466.xml" number="78">
+    <text>G3 followed by A3 flat</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="2" music_file="scarlatti_k466.xml" number="79">
+    <text>melodic octave</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="scarlatti_k466.xml" number="80">
+    <text>harmonic fifth</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="telemann_taenzchen.xml" number="81">
+    <text>G2</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="telemann_taenzchen.xml" number="82">
+    <text>F#4</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="telemann_taenzchen.xml" number="83">
+    <text>quarter note</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="telemann_taenzchen.xml" number="84">
+    <text>sixteenth note F#</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="telemann_taenzchen.xml" number="85">
+    <text>quarter note D</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="telemann_taenzchen.xml" number="86">
+    <text>D in the left hand</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="telemann_taenzchen.xml" number="87">
+    <text>quarter note G followed by quarter note A</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="2" music_file="telemann_taenzchen.xml" number="88">
+    <text>eighth note E followed by eighth note C</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="telemann_taenzchen.xml" number="89">
+    <text>rising octave</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="telemann_taenzchen.xml" number="90">
+    <text>harmonic octave</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="2" music_file="telemann_twv33_21_tres_vite.xml" number="91">
+    <text>G5</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="telemann_twv33_21_tres_vite.xml" number="92">
+    <text>minim</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="2" music_file="telemann_twv33_21_tres_vite.xml" number="93">
+    <text>quaver F#</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="telemann_twv33_21_tres_vite.xml" number="94">
+    <text>minim G in the left hand</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="telemann_twv33_21_tres_vite.xml" number="95">
+    <text>crotchet B followed by minim B</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="telemann_twv33_21_tres_vite.xml" number="96">
+    <text>minim followed by minim</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="2" music_file="telemann_twv33_21_tres_vite.xml" number="97">
+    <text>falling tone</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="telemann_twv33_21_tres_vite.xml" number="98">
+    <text>falling octave</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="2" music_file="telemann_twv33_21_tres_vite.xml" number="99">
+    <text>major seventeenth</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="2" music_file="telemann_twv33_21_tres_vite.xml" number="100">
+    <text>perfect cadence</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="vivaldi_concerto_rv299_largo.xml" number="101">
+    <text>B5</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="vivaldi_concerto_rv299_largo.xml" number="102">
+    <text>dotted minim</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="vivaldi_concerto_rv299_largo.xml" number="103">
+    <text>dotted quaver rest</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="vivaldi_concerto_rv299_largo.xml" number="104">
+    <text>F natural quaver</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="vivaldi_concerto_rv299_largo.xml" number="105">
+    <text>D sharp trill</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="vivaldi_concerto_rv299_largo.xml" number="106">
+    <text>down bow E</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="vivaldi_concerto_rv299_largo.xml" number="107">
+    <text>dotted minim in the piano left hand</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="vivaldi_concerto_rv299_largo.xml" number="108">
+    <text>minim followed by dotted minim</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="vivaldi_concerto_rv299_largo.xml" number="109">
+    <text>melodic rising fifth</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="vivaldi_concerto_rv299_largo.xml" number="110">
+    <text>harmonic major sixth</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="weiss_sonata_34_prelude.xml" number="111">
+    <text>C2</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="weiss_sonata_34_prelude.xml" number="112">
+    <text>half note</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="weiss_sonata_34_prelude.xml" number="113">
+    <text>quarter note C sharp</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="weiss_sonata_34_prelude.xml" number="114">
+    <text>half note B natural</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="weiss_sonata_34_prelude.xml" number="115">
+    <text>quarter note F sharp</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="weiss_sonata_34_prelude.xml" number="116">
+    <text>mordent on a dotted eighth note</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="weiss_sonata_34_prelude.xml" number="117">
+    <text>half note D in the bass</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="weiss_sonata_34_prelude.xml" number="118">
+    <text>sixteenth note rest followed by B natural</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="weiss_sonata_34_prelude.xml" number="119">
+    <text>minor ninth</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="weiss_sonata_34_prelude.xml" number="120">
+    <text>rising octave</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="bach_cello_suite_1_bwv1007_prelude.xml" number="121">
+    <text>whole note B</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="bach_cello_suite_1_bwv1007_prelude.xml" number="122">
+    <text>sixteenth note C2</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="bach_cello_suite_1_bwv1007_prelude.xml" number="123">
+    <text>E flat followed by D</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="bach_cello_suite_1_bwv1007_prelude.xml" number="124">
+    <text>D followed by C sharp</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="bach_cello_suite_1_bwv1007_prelude.xml" number="125">
+    <text>sixteenth note C# followed by eighth note D</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="bach_cello_suite_1_bwv1007_prelude.xml" number="126">
+    <text>fermata on a whole note</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="bach_cello_suite_1_bwv1007_prelude.xml" number="127">
+    <text>harmonic minor sixth</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="bach_cello_suite_1_bwv1007_prelude.xml" number="128">
+    <text>harmonic major tenth</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="bach_cello_suite_1_bwv1007_prelude.xml" number="129">
+    <text>perfect cadence</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="bach_cello_suite_1_bwv1007_prelude.xml" number="130">
+    <text>monophony</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="bach_chorale_24835b3.xml" number="131">
+    <text>E#</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="bach_chorale_24835b3.xml" number="132">
+    <text>F2 sharp</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="bach_chorale_24835b3.xml" number="133">
+    <text>minim</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="2" music_file="bach_chorale_24835b3.xml" number="134">
+    <text>dotted crotchet</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="bach_chorale_24835b3.xml" number="135">
+    <text>semiquaver F#</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="bach_chorale_24835b3.xml" number="136">
+    <text>crotchet D4</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="bach_chorale_24835b3.xml" number="137">
+    <text>semiquaver B natural</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="bach_chorale_24835b3.xml" number="138">
+    <text>fermata on a G</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="4" music_file="bach_chorale_24835b3.xml" number="139">
+    <text>semiquaver in the bass</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="bach_chorale_24835b3.xml" number="140">
+    <text>perfect cadence</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="2" music_file="bach_chorale_507b.xml" number="141">
+    <text>E natural</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="bach_chorale_507b.xml" number="142">
+    <text>G2</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="bach_chorale_507b.xml" number="143">
+    <text>D5</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="2" music_file="bach_chorale_507b.xml" number="144">
+    <text>F natural</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="bach_chorale_507b.xml" number="145">
+    <text>dotted half note</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="bach_chorale_507b.xml" number="146">
+    <text>half note</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="bach_chorale_507b.xml" number="147">
+    <text>dotted half note F#</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="bach_chorale_507b.xml" number="148">
+    <text>fermata on a quarter note </text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="bach_chorale_507b.xml" number="149">
+    <text>perfect cadence</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="bach_chorale_507b.xml" number="150">
+    <text>tonic triad</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="carissimi_o_felix_anima.xml" number="151">
+    <text>semibreve F4 in the Alto</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="carissimi_o_felix_anima.xml" number="152">
+    <text>semibreve D4 in the Bass</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="carissimi_o_felix_anima.xml" number="153">
+    <text>G# in the Bass</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="carissimi_o_felix_anima.xml" number="154">
+    <text>Alto C#</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="carissimi_o_felix_anima.xml" number="155">
+    <text>Bass C#</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="carissimi_o_felix_anima.xml" number="156">
+    <text>semibreve A4 followed by minim D5</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="carissimi_o_felix_anima.xml" number="157">
+    <text>melodic fourth</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="carissimi_o_felix_anima.xml" number="158">
+    <text>rising melodic fifth</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="carissimi_o_felix_anima.xml" number="159">
+    <text>Ia triad</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="carissimi_o_felix_anima.xml" number="160">
+    <text>homophony</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="2" music_file="dowland_earl_of_essex_measure.xml" number="161">
+    <text>G</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="2" music_file="dowland_earl_of_essex_measure.xml" number="162">
+    <text>E5</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="2" music_file="dowland_earl_of_essex_measure.xml" number="163">
+    <text>D</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="2" music_file="dowland_earl_of_essex_measure.xml" number="164">
+    <text>A</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="dowland_earl_of_essex_measure.xml" number="165">
+    <text>dotted half note</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="dowland_earl_of_essex_measure.xml" number="166">
+    <text>half note</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="dowland_earl_of_essex_measure.xml" number="167">
+    <text>quarter note rest</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="2" music_file="dowland_earl_of_essex_measure.xml" number="168">
+    <text>quaver</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="2" music_file="dowland_earl_of_essex_measure.xml" number="169">
+    <text>dotted half note followed by dotted quarter note</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="2" music_file="dowland_earl_of_essex_measure.xml" number="170">
+    <text>falling fourth</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="lully_andante.xml" number="171">
+    <text>dotted half note</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="lully_andante.xml" number="172">
+    <text>half note</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="lully_andante.xml" number="173">
+    <text>quarter note rest</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="2" music_file="lully_andante.xml" number="174">
+    <text>eighth note</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="lully_andante.xml" number="175">
+    <text>quarter note</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="lully_andante.xml" number="176">
+    <text>half note G in the &quot;Violoncello&quot;</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="lully_andante.xml" number="177">
+    <text>dotted half note in the &quot;Violine 1&quot; part</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="lully_andante.xml" number="178">
+    <text>half note followed by dotted half note</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="lully_andante.xml" number="179">
+    <text>B followed by B</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="2" music_file="lully_andante.xml" number="180">
+    <text>seventeenth</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="purcell_fie_nay_prithee_zd10.xml" number="181">
+    <text>minim A3</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="purcell_fie_nay_prithee_zd10.xml" number="182">
+    <text>minim C sharp</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="2" music_file="purcell_fie_nay_prithee_zd10.xml" number="183">
+    <text>dotted crotchet A4</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="purcell_fie_nay_prithee_zd10.xml" number="184">
+    <text>crotchet F5 sharp</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="2" music_file="purcell_fie_nay_prithee_zd10.xml" number="185">
+    <text>semibreve rest followed by dotted crotchet A</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="purcell_fie_nay_prithee_zd10.xml" number="186">
+    <text>minim C# followed by semibreve rest</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="2" music_file="purcell_fie_nay_prithee_zd10.xml" number="187">
+    <text>quaver E followed by quaver E</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="2" music_file="purcell_fie_nay_prithee_zd10.xml" number="188">
+    <text>quaver D followed by quaver D</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="2" music_file="purcell_fie_nay_prithee_zd10.xml" number="189">
+    <text>quaver C# followed by quaver C#</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="2" music_file="purcell_fie_nay_prithee_zd10.xml" number="190">
+    <text>quaver C# followed by crotchet B</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="tallis_all_praise_to_thee.xml" number="191">
+    <text>F#</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="tallis_all_praise_to_thee.xml" number="192">
+    <text>C</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="tallis_all_praise_to_thee.xml" number="193">
+    <text>D</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="tallis_all_praise_to_thee.xml" number="194">
+    <text>B</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="tallis_all_praise_to_thee.xml" number="195">
+    <text>G</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="tallis_all_praise_to_thee.xml" number="196">
+    <text>crotchet rest</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="tallis_all_praise_to_thee.xml" number="197">
+    <text>crotchet</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="tallis_all_praise_to_thee.xml" number="198">
+    <text>crotchet F#</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="tallis_all_praise_to_thee.xml" number="199">
+    <text>G on the word &quot;praise&quot;</text>
+    <answer>
+    </answer>
+  </question>
+  <question divisions="1" music_file="tallis_all_praise_to_thee.xml" number="200">
+    <text>fourth</text>
+    <answer>
+    </answer>
+  </question>
+</questions>

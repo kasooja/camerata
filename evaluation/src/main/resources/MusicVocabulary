@@ -1,0 +1,69 @@
+Notes: 
+A 
+B 
+C 
+D 
+E 
+F 
+G 
+
+Cadence:
+perfect cadence
+imperfect cadence
+
+Lines:
+Staff
+Ledger==ledger lines
+Bar line
+Double bar line==Double barline
+Bold double bar line==Bold double barline
+Dotted bar line==Dotted barline
+Bracket
+Brace
+
+Clefs: 
+G clef==Treble clef
+C clef==Alto clef==Tenor clef
+F clef==Bass clef
+Natural clef
+Octave clef
+Tablature
+
+Notes and Rests (British name / American name): 
+Maxima==Octuple whole note
+Longa==Quadruple whole note
+Breve==Double whole note
+Semibreve==Whole note
+Minim==Half note
+Crotchet==Quarter note
+Quaver==Eighth note
+Semiquaver==Sixteenth note
+Demisemiquaver==Thirty-second note
+Hemidemisemiquaver==Sixty-fourth note
+Semihemidemisemiquaver==Hundred twenty-eighth note
+Demisemihemidemisemiquaver==Two hundred fifty-sixth note
+Beamed note
+Dotted note
+Multi measure rest
+
+Breaks:
+Breath mark
+Caesura
+
+Accidentals:
+Flat
+Sharp
+Natural
+Double flat
+Double sharp
+
+Key Signatures:
+
+Time Signatures (Common time, Alla breve or cut time, Metronome mark):
+
+Quarter tones:
+Demiflat
+flat-and-a-half
+Demisharp
+Sharp-and-a-half
+

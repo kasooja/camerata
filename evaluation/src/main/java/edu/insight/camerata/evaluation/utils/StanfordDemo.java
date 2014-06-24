@@ -1,16 +1,12 @@
 package edu.insight.camerata.evaluation.utils;
 
 
-//performs..
-//author snegi
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
-
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.ling.CoreAnnotations.SentencesAnnotation;
 import edu.stanford.nlp.ling.Label;
@@ -22,7 +18,6 @@ import edu.stanford.nlp.trees.TreeCoreAnnotations;
 import edu.stanford.nlp.util.CoreMap;
 
 public class StanfordDemo {
-
 
 	private static StanfordCoreNLP pipeline = new StanfordCoreNLP();
 

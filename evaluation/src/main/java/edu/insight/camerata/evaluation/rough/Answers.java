@@ -1,4 +1,4 @@
-package edu.insight.camerata.evaluation.run;
+package edu.insight.camerata.evaluation.rough;
 
 import org.xml.sax.helpers.DefaultHandler;
 
@@ -62,7 +62,7 @@ public class Answers {
 
 	}
 
-	public static void main(String []args){
+	public static void main(String[] args){
 		DefaultHandler handler1 = new MusicXmlHandler(music1);
 		MusicReader lReader1 = new MusicReader(dataPath1);
 		lReader1.read(handler1);

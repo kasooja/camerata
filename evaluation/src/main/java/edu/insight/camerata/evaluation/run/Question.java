@@ -9,7 +9,8 @@ public class Question {
 
 	@Override
 	public String toString() {
-		return question + "\t" + musicXmlFile + "\n";
+		//return question + "\t" + musicXmlFile + "\n";
+		return question + "\n";
 	}
 	
 }

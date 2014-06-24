@@ -11,7 +11,12 @@ import edu.insight.camerata.evaluation.xml.Pitch;
 
 public class PitchExtractor {
 
-	public static List<Measure> getPitch(Music music, String step, String octave, String alter, boolean rest){
+	public static List<Measure> getPitch(Music music, Pitch pitch){
+		String step = pitch.step;
+		String octave = pitch.octave; 
+		String alter = pitch.alter; 
+		boolean rest = pitch.rest;
+		
 		List<Measure> pitchMeasures = new ArrayList<Measure>();
 		List<Pitch> pitchnotes = new ArrayList<Pitch>();
 		for (String key : music.musicPartMap.keySet()) {

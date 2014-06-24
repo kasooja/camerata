@@ -1,8 +1,6 @@
 package edu.insight.camerata.evaluation.run;
 
-import java.util.ArrayList;
 import java.util.List;
-
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
@@ -15,7 +13,7 @@ public class QuestionsXmlHandler extends DefaultHandler {
 	private List<Question> questions; 
 
 	public QuestionsXmlHandler(List<Question> questions) {
-		questions = new ArrayList<Question>();
+		this.questions = questions;
 	}
 
 	public void startElement(String uri, String localName, String qName, Attributes attributes)
@@ -23,7 +21,7 @@ public class QuestionsXmlHandler extends DefaultHandler {
 		if (qName.equalsIgnoreCase("question")) {
 			currentQuestion = new Question();
 			questions.add(currentQuestion);
-			currentQuestion.musicXmlFile = attributes.getValue("music_xml");
+			currentQuestion.musicXmlFile = attributes.getValue("music_file");
 			currentQuestion.divisions = attributes.getValue("divisions");
 			currentQuestion.number = attributes.getValue("number");
 		}
