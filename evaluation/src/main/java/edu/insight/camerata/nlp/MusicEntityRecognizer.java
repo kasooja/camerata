@@ -2,14 +2,17 @@ package edu.insight.camerata.nlp;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import edu.insight.camerata.evaluation.utils.BasicFileTools;
+import edu.insight.camerata.evaluation.xml.Note;
 import edu.insight.camerata.evaluation.xml.Pitch;
 
 public class MusicEntityRecognizer {
@@ -17,8 +20,10 @@ public class MusicEntityRecognizer {
 	public static String vocabFilePath = "src/main/resources/MusicVocabularyTest";
 	public static Map<String, Set<String>> classWithVocab = new HashMap<String, Set<String>>();
 	public static String noteOctaveRegex = "(A|B|C|D|E|F|G)(.d*)";
+	public static String noteAllRegex = "(A|B|C|D|E|F|G)(#?)(\\d)?\\s*(sharp|natural|flat)?";
+	public static Pattern noteAllPattern = Pattern.compile(noteAllRegex);
 	public static Pattern noteOctavePattern = Pattern.compile(noteOctaveRegex);
-	
+
 	static {
 		BufferedReader buffReader = BasicFileTools.getBufferedReaderFile(vocabFilePath);
 		String line = null;
@@ -31,7 +36,7 @@ public class MusicEntityRecognizer {
 					if(classWithVocab.get(PhraseElementTypes.getEnum(line)) == null) 
 						classWithVocab.put(label, new HashSet<String>());
 				} else if(!line.trim().equalsIgnoreCase("")) {
-//					classWithVocab.get(PhraseElementTypes.getEnum(label)).add(line.toLowerCase().trim());
+					//					classWithVocab.get(PhraseElementTypes.getEnum(label)).add(line.toLowerCase().trim());
 				}
 			}
 		} catch (IOException e) {
@@ -58,11 +63,11 @@ public class MusicEntityRecognizer {
 		}	
 		return entities;
 	}
-	
+
 	public static Pitch recognizePitchEntities(String query) {
 		Matcher matcher = noteOctavePattern.matcher(query);
 		Pitch pitch = new Pitch();
-	
+
 		while(matcher.find()) {
 			String step = matcher.group(1).trim();
 			String octave = matcher.group(2).trim();		
@@ -70,15 +75,63 @@ public class MusicEntityRecognizer {
 			pitch.step = step;
 			pitch.entityRecognized = true;
 		}			
-		
+
 		return pitch;
 	}
 
+
+	public static List<Pitch> recognizePitches(String query) {
+		Matcher matcher = noteAllPattern.matcher(query);
+		List<Pitch> pitches = new ArrayList<Pitch>();
+		while(matcher.find()) {
+			Pitch pitch = new Pitch();
+			String step = null;
+			String alter1 = null;
+			String octave = null;
+			String alter2 = null;				
+			if(matcher.group(1) != null)
+				step = matcher.group(1).trim();
+			if(matcher.group(2) != null)				
+				alter1 = matcher.group(2).trim();
+			if(matcher.group(3) != null)				
+				octave = matcher.group(3).trim();
+			if(matcher.group(4) != null)				
+				alter2 = matcher.group(4).trim();					
+			pitch.octave = octave;
+			pitch.step = step;
+			pitch.entityRecognized = true;
+			if(alter1 != null) {
+				if(alter1.equalsIgnoreCase("#"))
+					pitch.alter = "1";
+			}
+			if(alter2 != null){
+				if(alter2.equalsIgnoreCase("sharp")){
+					pitch.alter = "1";
+				}
+				else if(alter2.equalsIgnoreCase("flat")){
+					pitch.alter = "-1";
+				}
+				else if(alter2.equalsIgnoreCase("natural")){
+					pitch.alter = null;
+				}
+			}			
+			pitch.entityRecognized = true;
+			pitches.add(pitch);
+		}			
+		return pitches;
+	}
+
+
 	public static void main(String[] args) {
-		String questionText = "G5";
-		questionText = questionText.toLowerCase();
-	//	PitchExtractor.getPitch(music, step, octave, alter, rest);		
+		String questionText = "	1. G5, B, E5, B4, A sharp, A#, A natural, A flat, G#5, F2 sharp, B";
+		List<Pitch> pitches = recognizePitches(questionText);
+
+		for(Pitch pitch : pitches)
+			System.out.println(pitch);
+
+		//	PitchExtractor.getPitch(music, step, octave, alter, rest);		
 		//Map<String, Set<String>> musicalPhraseElements = getMusicalPhraseElements(questionText);
+
 	}
 
 }

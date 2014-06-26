@@ -486,7 +486,7 @@
 			<note default-x="12.00" default-y="-100.00">
 				<pitch>
 					<step>B</step>
-					<octave>3</octave>
+					<octave>3</octave> 	
 				</pitch>
 				<duration>36</duration>
 				<voice>5</voice>

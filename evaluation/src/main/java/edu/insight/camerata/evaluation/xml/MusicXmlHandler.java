@@ -17,6 +17,7 @@ public class MusicXmlHandler extends DefaultHandler {
 	private boolean takeText = false;
 	private String tagStringValue = null;
 	private int noteNumber = 0;
+	private boolean backupOrForward = false;
 
 
 	public MusicXmlHandler(Music music) {
@@ -141,11 +142,11 @@ public class MusicXmlHandler extends DefaultHandler {
 		}
 
 		if (qName.equalsIgnoreCase("backup")) {
-
+			backupOrForward = true;
 		}
 		
 		if (qName.equalsIgnoreCase("forward")) {
-
+			takeText = false;			
 		}
 
 		if (qName.equalsIgnoreCase("note")) {
@@ -177,7 +178,8 @@ public class MusicXmlHandler extends DefaultHandler {
 		}
 
 		if (qName.equalsIgnoreCase("duration")) {
-			takeText = true;				
+			if(!backupOrForward)
+				takeText = true;			
 		}	
 
 		if (qName.equalsIgnoreCase("voice")) {
@@ -230,8 +232,12 @@ public class MusicXmlHandler extends DefaultHandler {
 			currentNote.pitch.alter = tagStringValue;
 		if(qName.equalsIgnoreCase("octave"))
 			currentNote.pitch.octave = tagStringValue;
-		if(qName.equalsIgnoreCase("duration"))
-			currentNote.duration = Double.parseDouble(tagStringValue);
+		if(qName.equalsIgnoreCase("duration")){
+			if(!backupOrForward)
+				currentNote.duration = Double.parseDouble(tagStringValue);
+			else
+				backupOrForward = false;
+		}
 		if(qName.equalsIgnoreCase("voice"))
 			currentNote.voice = tagStringValue;
 		if(qName.equalsIgnoreCase("type"))

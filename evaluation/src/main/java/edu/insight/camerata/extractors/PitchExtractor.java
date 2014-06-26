@@ -1,7 +1,10 @@
 package edu.insight.camerata.extractors;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
+import edu.insight.camerata.evaluation.run.Pair;
 import edu.insight.camerata.evaluation.xml.Measure;
 import edu.insight.camerata.evaluation.xml.MeasureAttributes;
 import edu.insight.camerata.evaluation.xml.Music;
@@ -12,7 +15,7 @@ import edu.insight.camerata.evaluation.xml.Pitch;
 
 public class PitchExtractor {
 
-	public static List<Measure> getPitch(Music music, Pitch pitch) {
+	public static Set<Measure> getPitch(Music music, Pitch pitch) {
 		MeasureAttributes ma = null;
 		String step = pitch.step;
 		String octave = pitch.octave; 
@@ -33,7 +36,7 @@ public class PitchExtractor {
 		if(rest == false)
 			restEqual = true;		
 
-		List<Measure> pitchMeasures = new ArrayList<Measure>();
+		Set<Measure> pitchMeasures = new HashSet<Measure>();
 
 		for (String partNumber : music.musicPartMap.keySet()) {
 			Part part = music.musicPartMap.get(partNumber);
@@ -52,6 +55,10 @@ public class PitchExtractor {
 					restEqual = rest == note.pitch.rest;
 					if(stepEqual && octaveEqual && alterEqual && restEqual){
 						measure.computedAttributes = ma;
+						Pair answerPair = new Pair();
+						answerPair.startNote = note;
+						answerPair.endNote = note;						
+						measure.answerPairs.add(answerPair);
 						pitchMeasures.add(measure);					
 					}
 				}

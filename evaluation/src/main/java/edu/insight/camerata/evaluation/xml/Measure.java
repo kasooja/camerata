@@ -1,7 +1,11 @@
 package edu.insight.camerata.evaluation.xml;
 
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
+
+import edu.insight.camerata.evaluation.run.Pair;
 
 public class Measure {	
 
@@ -9,8 +13,8 @@ public class Measure {
 	public int measureNumber;
 	public MeasureAttributes attributes;
 	public MeasureAttributes computedAttributes;
-
-
+	public List<Pair> answerPairs = new ArrayList<Pair>(); 
+	
 	public Measure() {
 		notes = new LinkedHashMap<Integer, Note>();
 	}
