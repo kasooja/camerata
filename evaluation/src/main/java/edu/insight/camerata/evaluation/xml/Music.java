@@ -8,7 +8,7 @@ public class Music {
 
 	public Map<String, Part> musicPartMap;
 
-	public Music(){
+	public Music() {
 		musicPartMap = new LinkedHashMap<String, Part>();
 	}
 

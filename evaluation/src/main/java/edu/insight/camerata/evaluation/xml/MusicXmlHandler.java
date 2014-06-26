@@ -119,12 +119,12 @@ public class MusicXmlHandler extends DefaultHandler {
 		if (qName.equalsIgnoreCase("beat-type")) {
 			takeText = true;
 		}
-		
+
 		if (qName.equalsIgnoreCase("staves")) {
 			takeText = true;
 		}
 
-		
+
 		if (qName.equalsIgnoreCase("clef")) {
 			currentClef = new Clef();
 			if(attributes.getValue("number") != null)
@@ -140,12 +140,21 @@ public class MusicXmlHandler extends DefaultHandler {
 			takeText = true;
 		}
 
+		if (qName.equalsIgnoreCase("backup")) {
+
+		}
+		
+		if (qName.equalsIgnoreCase("forward")) {
+
+		}
+
 		if (qName.equalsIgnoreCase("note")) {
 			noteNumber++;
 			currentNote = new Note();
 			currentMeasure.notes.put(noteNumber, currentNote);
 		}
 
+		
 		if (qName.equalsIgnoreCase("pitch")) {
 			currentNote.pitch = new Pitch();			
 		}
@@ -229,8 +238,8 @@ public class MusicXmlHandler extends DefaultHandler {
 			currentNote.type = tagStringValue;
 		if(qName.equalsIgnoreCase("stem"))
 			currentNote.stem = tagStringValue;
-		
-		
+
+
 
 	}
 

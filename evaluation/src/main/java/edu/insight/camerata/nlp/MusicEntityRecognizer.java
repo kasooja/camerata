@@ -11,7 +11,6 @@ import java.util.regex.Pattern;
 
 import edu.insight.camerata.evaluation.utils.BasicFileTools;
 import edu.insight.camerata.evaluation.xml.Pitch;
-import edu.insight.camerata.extractors.PitchExtractor;
 
 public class MusicEntityRecognizer {
 
@@ -32,7 +31,7 @@ public class MusicEntityRecognizer {
 					if(classWithVocab.get(PhraseElementTypes.getEnum(line)) == null) 
 						classWithVocab.put(label, new HashSet<String>());
 				} else if(!line.trim().equalsIgnoreCase("")) {
-					classWithVocab.get(PhraseElementTypes.getEnum(label)).add(line.toLowerCase().trim());
+//					classWithVocab.get(PhraseElementTypes.getEnum(label)).add(line.toLowerCase().trim());
 				}
 			}
 		} catch (IOException e) {
@@ -63,12 +62,15 @@ public class MusicEntityRecognizer {
 	public static Pitch recognizePitchEntities(String query) {
 		Matcher matcher = noteOctavePattern.matcher(query);
 		Pitch pitch = new Pitch();
+	
 		while(matcher.find()) {
 			String step = matcher.group(1).trim();
 			String octave = matcher.group(2).trim();		
 			pitch.octave = octave;
-			pitch.step = step;				
-		}
+			pitch.step = step;
+			pitch.entityRecognized = true;
+		}			
+		
 		return pitch;
 	}
 

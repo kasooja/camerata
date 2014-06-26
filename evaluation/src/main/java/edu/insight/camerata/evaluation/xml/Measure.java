@@ -8,6 +8,8 @@ public class Measure {
 	public Map<Integer, Note> notes;
 	public int measureNumber;
 	public MeasureAttributes attributes;
+	public MeasureAttributes computedAttributes;
+
 
 	public Measure() {
 		notes = new LinkedHashMap<Integer, Note>();

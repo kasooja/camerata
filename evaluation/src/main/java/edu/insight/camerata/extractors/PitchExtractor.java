@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import edu.insight.camerata.evaluation.xml.Measure;
+import edu.insight.camerata.evaluation.xml.MeasureAttributes;
 import edu.insight.camerata.evaluation.xml.Music;
 import edu.insight.camerata.evaluation.xml.Note;
 import edu.insight.camerata.evaluation.xml.Part;
@@ -11,20 +12,69 @@ import edu.insight.camerata.evaluation.xml.Pitch;
 
 public class PitchExtractor {
 
-	public static List<Measure> getPitch(Music music, Pitch pitch){
+	public static List<Measure> getPitch(Music music, Pitch pitch) {
+		MeasureAttributes ma = null;
 		String step = pitch.step;
 		String octave = pitch.octave; 
 		String alter = pitch.alter; 
 		boolean rest = pitch.rest;
-		
+
+		boolean stepEqual = false;		
+		boolean octaveEqual = false;
+		boolean alterEqual = false;
+		boolean restEqual = false;
+
+		if(step == null)
+			stepEqual = true;
+		if(octave == null)
+			octaveEqual = true;
+		if(alter == null)
+			alterEqual = true;
+		if(rest == false)
+			restEqual = true;		
+
+		List<Measure> pitchMeasures = new ArrayList<Measure>();
+
+		for (String partNumber : music.musicPartMap.keySet()) {
+			Part part = music.musicPartMap.get(partNumber);
+			for (String measureNumber : part.measures.keySet()) {
+				Measure measure = part.measures.get(measureNumber);
+				if(measure.attributes != null)
+					ma = measure.attributes;
+				for (Integer noteNumber: measure.notes.keySet()){
+					Note note = measure.notes.get(noteNumber);					
+					if(step != null && note.pitch.step != null)
+						stepEqual = note.pitch.step.equalsIgnoreCase(step);
+					if(alter != null && note.pitch.alter != null)
+						alterEqual = note.pitch.alter.equalsIgnoreCase(alter);
+					if(octave != null && note.pitch.octave != null)
+						octaveEqual = note.pitch.octave.equalsIgnoreCase(octave);
+					restEqual = rest == note.pitch.rest;
+					if(stepEqual && octaveEqual && alterEqual && restEqual){
+						measure.computedAttributes = ma;
+						pitchMeasures.add(measure);					
+					}
+				}
+			}
+		}
+		return pitchMeasures;	
+	}
+
+	public static List<Measure> getPitchSin(Music music, Pitch pitch){
+		String step = pitch.step;
+		String octave = pitch.octave; 
+		String alter = pitch.alter; 
+		boolean rest = pitch.rest;
+
 		List<Measure> pitchMeasures = new ArrayList<Measure>();
 		List<Pitch> pitchnotes = new ArrayList<Pitch>();
-		for (String key : music.musicPartMap.keySet()) {
-			Part part = music.musicPartMap.get(key);
-			for (String key1 : part.measures.keySet()) {
-				Measure measure = part.measures.get(key1);
-				for (Integer key2: measure.notes.keySet()){
-					Note note = measure.notes.get(key2);
+
+		for (String partNumber : music.musicPartMap.keySet()) {
+			Part part = music.musicPartMap.get(partNumber);
+			for (String measureNumber : part.measures.keySet()) {
+				Measure measure = part.measures.get(measureNumber);
+				for (Integer noteNumber: measure.notes.keySet()){
+					Note note = measure.notes.get(noteNumber);					
 
 					//for questions type : Note Accidental
 					if(note.pitch.alter != null){

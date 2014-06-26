@@ -6,6 +6,8 @@ public class Pitch {
 	public String octave;
 	public String alter;
 	public boolean rest = false;
+	public boolean entityRecognized = false;
+	
 
 	@Override
 	public String toString() {
