@@ -12,7 +12,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import edu.insight.camerata.evaluation.utils.BasicFileTools;
-import edu.insight.camerata.evaluation.xml.Note;
 import edu.insight.camerata.evaluation.xml.Pitch;
 
 public class MusicEntityRecognizer {
@@ -20,7 +19,8 @@ public class MusicEntityRecognizer {
 	public static String vocabFilePath = "src/main/resources/MusicVocabularyTest";
 	public static Map<String, Set<String>> classWithVocab = new HashMap<String, Set<String>>();
 	public static String noteOctaveRegex = "(A|B|C|D|E|F|G)(.d*)";
-	public static String noteAllRegex = "(A|B|C|D|E|F|G)(#?)(\\d)?\\s*(sharp|natural|flat)?";
+	public static String noteAllRegex = "(A|B|C|D|E|F|G|rest)(#|b?)(\\d)?\\s*(sharp|natural|flat)?";
+	public static String noteTimeRegex = "(dotted)?\\s*(maxima|octuple whole|longa|quadruple whole|breve|double whole|semibreve|whole|minim|half|crotchet|quarter|quaver|eighth|semiquaver|sixteenth|demisemiquaver|thirty-second|hemidemisemiquaver|sixty-fourth|semihemidemisemiquaver|hundred twenty-eighth|demisemihemidemisemiquaver|two hundred fifty-sixth)\\s*(note)?";
 	public static Pattern noteAllPattern = Pattern.compile(noteAllRegex);
 	public static Pattern noteOctavePattern = Pattern.compile(noteOctaveRegex);
 
@@ -88,9 +88,13 @@ public class MusicEntityRecognizer {
 			String step = null;
 			String alter1 = null;
 			String octave = null;
-			String alter2 = null;				
-			if(matcher.group(1) != null)
-				step = matcher.group(1).trim();
+			String alter2 = null;
+			if(matcher.group(1) != null){
+				if(matcher.group().equalsIgnoreCase("rest"))
+					pitch.rest = true;
+				else
+					step = matcher.group(1).trim();
+			}
 			if(matcher.group(2) != null)				
 				alter1 = matcher.group(2).trim();
 			if(matcher.group(3) != null)				
@@ -103,6 +107,8 @@ public class MusicEntityRecognizer {
 			if(alter1 != null) {
 				if(alter1.equalsIgnoreCase("#"))
 					pitch.alter = "1";
+				else if(alter1.equalsIgnoreCase("b"))
+					pitch.alter = "-1";
 			}
 			if(alter2 != null){
 				if(alter2.equalsIgnoreCase("sharp")){
