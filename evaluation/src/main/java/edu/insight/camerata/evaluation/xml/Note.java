@@ -7,6 +7,10 @@ public class Note {
 	public String type;
 	public String voice;
 	public String stem;
+	public String staff;
+	public boolean dot = false;
+	public boolean entityRecognized = false;
+	public String matchedString;
 
 	@Override
 	public String toString() {

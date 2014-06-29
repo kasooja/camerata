@@ -137,9 +137,19 @@ public class StanfordDemo {
 	}
 
 	public static void main(String[] args) throws IOException {
-		String text = "Outstanding service We decided to give Hotel Monaco a try after reading the positive reviews here on TripAdvisor, and having had excellent experiences at Kimpton Hotels in other cities.I've stayed at several downtown Seattle hotels before (including Sheraton, Grand Hyatt, The W) and while I had positive experiences at all of them, I would certainly return to Hotel Monaco before the others."+
-				"It was truly outstanding in all areas from decor, cleanliness, and especially the service.The reservations and check-in process was flawless.";
-		List<String> sentences = StanfordDemo.getSentences(text);
+//		String text = "Outstanding service We decided to give Hotel Monaco a try after reading the positive reviews here on TripAdvisor, and having had excellent experiences at Kimpton Hotels in other cities.I've stayed at several downtown Seattle hotels before (including Sheraton, Grand Hyatt, The W) and while I had positive experiences at all of them, I would certainly return to Hotel Monaco before the others."+
+//				"It was truly outstanding in all areas from decor, cleanliness, and especially the service.The reservations and check-in process was flawless.";
+		String text1 = "rest followed by whole note";
+		List<String> tags = new ArrayList<String>();
+		tags.add("NP"); tags.add("VP");
+		Map<String, List<String>> tagText = StanfordDemo.getTagText(text1, tags);
+		for(String tag : tagText.keySet()){
+			List<String> phrases = tagText.get(tag);
+			for(String phrase : phrases){
+				System.out.println(phrase);
+			}
+		}
+	//	List<String> sentences = StanfordDemo.getSentences(text);
 
 	}
 }

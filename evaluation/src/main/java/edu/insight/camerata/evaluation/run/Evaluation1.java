@@ -16,7 +16,7 @@ import edu.insight.camerata.evaluation.xml.Note;
 import edu.insight.camerata.extractors.NoteExtractor;
 import edu.insight.camerata.nlp.MusicEntityRecognizer;
 
-public class Evaluation {
+public class Evaluation1 {
 
 	public static String getCompleteAnswer(Measure m, Music music1, String divisionValue, Pair answerPair) {
 		int start_beats = 2;
@@ -152,31 +152,17 @@ public class Evaluation {
 			String clef = MusicEntityRecognizer.extractClef(questionString);
 
 			Set<Measure> answerMeasures = new HashSet<Measure>();
-			List<Set<Measure>> answerSets  = new ArrayList<Set<Measure>>();
 			for(Note note : notes) {
 				if(note.entityRecognized) {
 					note.staff = staff;					
 					Set<Measure> measures = NoteExtractor.getNote(music, note, instrumentName, clef);
-					answerSets.add(measures);
-					//	answerMeasures.addAll(measures);				
+					answerMeasures.addAll(measures);
 				}
 			}
-			if(!answerSets.isEmpty()){
-				System.out.println(answerSets.get(0).size());
-				Set<Measure> intersection = new HashSet<Measure>(answerSets.get(0));
-				for(Set<Measure> set : answerSets)
-					intersection.retainAll(set);
-				answerMeasures.addAll(intersection);
-			}
 			for(Measure measure : answerMeasures) {
-				if(notes.size()>1){
-					String passage = getCompleteAnswer(measure, music, question.divisions, measure.answerPairs.get(1));
-					answerXml.append(passage);					
-				} else {
-					for(Pair answerPair : measure.answerPairs){
-						String passage = getCompleteAnswer(measure, music, question.divisions, answerPair);
-						answerXml.append(passage);	
-					}
+				for(Pair answerPair : measure.answerPairs){
+					String passage = getCompleteAnswer(measure, music, question.divisions, answerPair);
+					answerXml.append(passage);	
 				}
 			}
 			answerXml.append("</answer>\n");
@@ -184,7 +170,9 @@ public class Evaluation {
 		}
 		answerXml.append("</questions>");
 
-		BasicFileTools.writeFile("src/main/resources/data/me14camerata_unlp01.xml", answerXml.toString().trim());
+		BasicFileTools.writeFile("src/main/resources/data/me14camerata_unlp02.xml", answerXml.toString().trim());
 	}
+
+
 
 }

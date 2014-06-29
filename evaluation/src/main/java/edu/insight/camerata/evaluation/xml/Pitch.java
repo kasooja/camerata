@@ -7,6 +7,7 @@ public class Pitch {
 	public String alter;
 	public boolean rest = false;
 	public boolean entityRecognized = false;
+	public String matchedString;
 	
 
 	@Override

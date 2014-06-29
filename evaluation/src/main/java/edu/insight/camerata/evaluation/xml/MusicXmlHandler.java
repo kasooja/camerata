@@ -32,12 +32,17 @@ public class MusicXmlHandler extends DefaultHandler {
 
 		if (qName.equalsIgnoreCase("part-list")) {
 		}
+	
 
 		if (qName.equalsIgnoreCase("score-part")) {
 			currentPart = new Part();			
 			currentPart.partId = attributes.getValue("id");
 			music.musicPartMap.put(currentPart.partId, currentPart);			
 		}
+		
+		
+//		  <instrument-name>Violoncello</instrument-name>
+	      
 
 		if (qName.equalsIgnoreCase("part-name")) {
 			takeText = true;
@@ -144,7 +149,7 @@ public class MusicXmlHandler extends DefaultHandler {
 		if (qName.equalsIgnoreCase("backup")) {
 			backupOrForward = true;
 		}
-		
+
 		if (qName.equalsIgnoreCase("forward")) {
 			takeText = false;			
 		}
@@ -155,7 +160,10 @@ public class MusicXmlHandler extends DefaultHandler {
 			currentMeasure.notes.put(noteNumber, currentNote);
 		}
 
-		
+		if (qName.equalsIgnoreCase("dot")) {
+			currentNote.dot = true;	
+		}		
+
 		if (qName.equalsIgnoreCase("pitch")) {
 			currentNote.pitch = new Pitch();			
 		}
@@ -192,7 +200,12 @@ public class MusicXmlHandler extends DefaultHandler {
 
 		if (qName.equalsIgnoreCase("stem")) {			
 			takeText = true;				
+		}
+		
+		if (qName.equalsIgnoreCase("staff")) {			
+			takeText = true;				
 		}	
+
 	}
 
 	public void endElement(String uri, String localName, String qName) throws SAXException {
@@ -244,8 +257,10 @@ public class MusicXmlHandler extends DefaultHandler {
 			currentNote.type = tagStringValue;
 		if(qName.equalsIgnoreCase("stem"))
 			currentNote.stem = tagStringValue;
-
-
+		if(qName.equalsIgnoreCase("staff")){
+			if(currentNote != null)
+				currentNote.staff = tagStringValue;
+		}
 
 	}
 
