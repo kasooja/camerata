@@ -15,6 +15,7 @@ import edu.insight.camerata.evaluation.xml.Pitch;
 public class NoteExtractor {
 
 	public static Set<Measure> getNote(Music music, Note note, String instrument, String clef) {
+		int count = 0;
 		MeasureAttributes ma = null;
 		Pitch pitch = note.pitch;
 		String step = null;
@@ -96,6 +97,7 @@ public class NoteExtractor {
 					if(staff != null && notee.staff != null)
 						staffEqual = notee.staff.equalsIgnoreCase(staff);
 					
+					
 					if(stepEqual && octaveEqual && alterEqual && restEqual && dotEqual && typeEqual && instrumentEqual && 
 							staffEqual && clefEqual) {
 						measure.computedAttributes = ma;
@@ -103,11 +105,16 @@ public class NoteExtractor {
 						answerPair.startNote = notee;
 						answerPair.endNote = notee;						
 						measure.answerPairs.add(answerPair);
-						noteMeasures.add(measure);					
+						noteMeasures.add(measure);
+						System.out.println(measure.measureNumber);
+						System.out.println(notee);
+						count++;
 					}
 				}
 			}			
 		}	
+	
+		System.out.println(count);
 		return noteMeasures;	
 	}
 

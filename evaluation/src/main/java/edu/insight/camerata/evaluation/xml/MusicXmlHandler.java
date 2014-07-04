@@ -32,17 +32,17 @@ public class MusicXmlHandler extends DefaultHandler {
 
 		if (qName.equalsIgnoreCase("part-list")) {
 		}
-	
+
 
 		if (qName.equalsIgnoreCase("score-part")) {
 			currentPart = new Part();			
 			currentPart.partId = attributes.getValue("id");
 			music.musicPartMap.put(currentPart.partId, currentPart);			
 		}
-		
-		
-//		  <instrument-name>Violoncello</instrument-name>
-	      
+
+
+		//		  <instrument-name>Violoncello</instrument-name>
+
 
 		if (qName.equalsIgnoreCase("part-name")) {
 			takeText = true;
@@ -201,7 +201,7 @@ public class MusicXmlHandler extends DefaultHandler {
 		if (qName.equalsIgnoreCase("stem")) {			
 			takeText = true;				
 		}
-		
+
 		if (qName.equalsIgnoreCase("staff")) {			
 			takeText = true;				
 		}	
@@ -251,6 +251,10 @@ public class MusicXmlHandler extends DefaultHandler {
 			else
 				backupOrForward = false;
 		}
+		if(qName.equalsIgnoreCase("pitch")){
+			if(currentNote.pitch.alter == null)
+				currentNote.pitch.alter = "0";
+		}	
 		if(qName.equalsIgnoreCase("voice"))
 			currentNote.voice = tagStringValue;
 		if(qName.equalsIgnoreCase("type"))

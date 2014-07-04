@@ -125,7 +125,7 @@ public class MusicEntityRecognizer {
 					pitch.alter = "-1";
 				}
 				else if(alter2.equalsIgnoreCase("natural")){
-					pitch.alter = null;
+					pitch.alter = "0";
 				}
 			}			
 			pitch.entityRecognized = true;
@@ -224,7 +224,7 @@ public class MusicEntityRecognizer {
 		//String questionText = "crotchet rest followed by whole note";
 		//String questionText = "rest followed by whole note";
 		//		String questionText = "G5";
-		String questionText = "fourth";
+		String questionText = "F natural";
 		//String questionText = "crotchet G5 followed by rest";
 		List<Pitch> pitches = recognizePitches(questionText);
 		List<Note> noteTimes = recognizeNoteTimes(questionText);
