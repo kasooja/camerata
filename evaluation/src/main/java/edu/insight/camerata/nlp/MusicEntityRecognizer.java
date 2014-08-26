@@ -21,12 +21,12 @@ public class MusicEntityRecognizer {
 	public static String vocabFilePath = "src/main/resources/MusicVocabularyTest";
 	public static Map<String, Set<String>> classWithVocab = new HashMap<String, Set<String>>();
 	public static String pitchAllRegex = "(A|B|C|D|E|F|G|rest)(#|b?)(\\d)?\\s*(sharp|natural|flat)?";
-	public static String noteTimeRegex = "(dotted)?\\s*(maxima|octuple whole|longa|quadruple whole|breve|double whole|semibreve|whole|minim|half|crotchet|quarter|quaver|eighth|semiquaver|sixteenth|demisemiquaver|thirty-second|hemidemisemiquaver|sixty-fourth|semihemidemisemiquaver|hundred twenty-eighth|demisemihemidemisemiquaver|two hundred fifty-sixth)\\s*(note)?";
+	public static String noteTimeRegex = "(dotted)?\\s*(maxima|octuple\\s*whole|longa|quadruple\\s*whole|breve|double\\s*whole|semibreve|whole|minim|half|crotchet|quarter|quaver|eighth|semiquaver|sixteenth|demisemiquaver|thirty[-\\s]second|hemidemisemiquaver|sixty-fourth|semihemidemisemiquaver|hundred\\s*twenty-eighth|demisemihemidemisemiquaver|two hundred fifty-sixth)\\s*(note)?";
 	public static Pattern noteAllPattern = Pattern.compile(pitchAllRegex);
 	public static Pattern noteTimePattern = Pattern.compile(noteTimeRegex);
 
 	static {
-		BufferedReader buffReader = BasicFileTools.getBufferedReaderFile(vocabFilePath);
+	BufferedReader buffReader = BasicFileTools.getBufferedReaderFile(vocabFilePath);
 		String line = null;
 		String label = null;
 		try {
@@ -223,7 +223,7 @@ public class MusicEntityRecognizer {
 		//String questionText = "G5 is followed by semiquaver F5 sharp";
 		//String questionText = "crotchet rest followed by whole note";
 		//String questionText = "rest followed by whole note";
-		//		String questionText = "G5";
+		//String questionText = "G5";
 		String questionText = "F natural";
 		//String questionText = "crotchet G5 followed by rest";
 		List<Pitch> pitches = recognizePitches(questionText);
