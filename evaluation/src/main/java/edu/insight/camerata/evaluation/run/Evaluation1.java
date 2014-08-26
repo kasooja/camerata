@@ -140,7 +140,7 @@ public class Evaluation1 {
 			Music music = new Music();			
 			String questionString = question.question;
 			if(questionString.equalsIgnoreCase("E"))
-				System.out.println("kartik gadhi hai");
+				System.out.println("debug");
 			System.out.println(questionString);
 			DefaultHandler musicHandler = new MusicXmlHandler(music);
 			MusicReader musicReader = new MusicReader("src/main/resources/data/camerata_questions_2014/" + question.musicXmlFile);
