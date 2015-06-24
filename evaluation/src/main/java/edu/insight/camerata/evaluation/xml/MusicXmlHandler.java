@@ -17,8 +17,9 @@ public class MusicXmlHandler extends DefaultHandler {
 	private boolean takeText = false;
 	private String tagStringValue = null;
 	private int noteNumber = 0;
-	private boolean backupOrForward = false;
-
+	//private boolean backupOrForward = false;
+	private boolean backup = false;
+	private boolean forward = false;
 
 	public MusicXmlHandler(Music music) {
 		this.music = music;		
@@ -33,16 +34,11 @@ public class MusicXmlHandler extends DefaultHandler {
 		if (qName.equalsIgnoreCase("part-list")) {
 		}
 
-
 		if (qName.equalsIgnoreCase("score-part")) {
 			currentPart = new Part();			
 			currentPart.partId = attributes.getValue("id");
 			music.musicPartMap.put(currentPart.partId, currentPart);			
 		}
-
-
-		//		  <instrument-name>Violoncello</instrument-name>
-
 
 		if (qName.equalsIgnoreCase("part-name")) {
 			takeText = true;
@@ -130,11 +126,13 @@ public class MusicXmlHandler extends DefaultHandler {
 			takeText = true;
 		}
 
-
 		if (qName.equalsIgnoreCase("clef")) {
 			currentClef = new Clef();
 			if(attributes.getValue("number") != null)
 				currentClef.clefNumber = Integer.parseInt(attributes.getValue("number"));
+			else {
+				currentClef.clefNumber = 1;
+			}
 			currentMeasureAttributes.clefs.add(currentClef);			
 		}
 
@@ -147,14 +145,15 @@ public class MusicXmlHandler extends DefaultHandler {
 		}
 
 		if (qName.equalsIgnoreCase("backup")) {
-			backupOrForward = true;
+			backup = true;
 		}
 
 		if (qName.equalsIgnoreCase("forward")) {
-			takeText = false;			
+			forward = true;
+			//			takeText = false;			
 		}
 
-		if (qName.equalsIgnoreCase("note")) {
+		if (qName.equalsIgnoreCase("note") || qName.equalsIgnoreCase("backup") || qName.equalsIgnoreCase("forward")) { // newly added: || qName.equalsIgnoreCase("backup") || qName.equalsIgnoreCase("forward")
 			noteNumber++;
 			currentNote = new Note();
 			currentMeasure.notes.put(noteNumber, currentNote);
@@ -162,7 +161,12 @@ public class MusicXmlHandler extends DefaultHandler {
 
 		if (qName.equalsIgnoreCase("dot")) {
 			currentNote.dot = true;	
-		}		
+		}
+
+		if (qName.equalsIgnoreCase("chord")) {
+			currentNote.chord = true;		
+		}
+
 
 		if (qName.equalsIgnoreCase("pitch")) {
 			currentNote.pitch = new Pitch();			
@@ -186,8 +190,8 @@ public class MusicXmlHandler extends DefaultHandler {
 		}
 
 		if (qName.equalsIgnoreCase("duration")) {
-			if(!backupOrForward)
-				takeText = true;			
+			//	if(!backupOrForward)
+			takeText = true;			
 		}	
 
 		if (qName.equalsIgnoreCase("voice")) {
@@ -233,7 +237,7 @@ public class MusicXmlHandler extends DefaultHandler {
 			currentMeasureAttributes.time.beats = Double.parseDouble(tagStringValue.trim());
 		if(qName.equalsIgnoreCase("beat-type"))
 			currentMeasureAttributes.time.beatType = Double.parseDouble(tagStringValue);
-		if(qName.equalsIgnoreCase("beat-type"))
+		if(qName.equalsIgnoreCase("staves"))
 			currentMeasureAttributes.staves = Double.parseDouble(tagStringValue);		
 		if(qName.equalsIgnoreCase("sign"))
 			currentClef.sign = tagStringValue;
@@ -246,10 +250,34 @@ public class MusicXmlHandler extends DefaultHandler {
 		if(qName.equalsIgnoreCase("octave"))
 			currentNote.pitch.octave = tagStringValue;
 		if(qName.equalsIgnoreCase("duration")){
-			if(!backupOrForward)
-				currentNote.duration = Double.parseDouble(tagStringValue);
-			else
-				backupOrForward = false;
+			//	if(!backupOrForward)
+			currentNote.duration = Double.parseDouble(tagStringValue);
+			if(backup){
+				currentNote.backUp = true;
+			} 
+			if(forward){
+				currentNote.forward = true;
+			}
+			if(currentNote.pitch!=null){
+				if(currentNote.pitch.rest){			
+					double noteTypeDuration = currentNote.duration/currentMeasureAttributes.divisions;
+					if(currentNote.type==null || currentNote.type.trim().equals("")){
+						if(noteTypeDuration == 4){
+							currentNote.type = "whole";					
+						} 
+						if(noteTypeDuration == 2){
+							currentNote.type = "half";
+						}
+						if(noteTypeDuration == 1){
+							currentNote.type = "quarter";
+						}
+					}
+				}
+			}			
+			backup = false;
+			forward = false;
+			//	else
+			//backupOrForward = false;
 		}
 		if(qName.equalsIgnoreCase("pitch")){
 			if(currentNote.pitch.alter == null)

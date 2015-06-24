@@ -3,6 +3,9 @@ package edu.insight.camerata.evaluation.rough;
 
 
 import org.jfugue.*;
+import org.jfugue.pattern.Pattern;
+import org.jfugue.player.Player;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -39,7 +42,7 @@ public class Canon {
       Pattern p = new Pattern(HEADER);
 
       // Add bass line
-      p.add(BASS, 28);
+//      p.add(BASS, 28);
 
       // Add treble lines
       for (int x = 0; x < 3; x++) {
@@ -58,10 +61,10 @@ public class Canon {
       p.add(FOOTER);
 
       // Save the MIDI file
-      System.out.println(p.getMusicString());
+      //System.out.println(((Object) p).getMusicString());
       Player player = new Player();
       player.play(p);
-      player.saveMidi(p, new File(args[1]));
+//      player.saveMidi(p, new File(args[1]));
 
     } catch (Exception e) {
       e.printStackTrace();

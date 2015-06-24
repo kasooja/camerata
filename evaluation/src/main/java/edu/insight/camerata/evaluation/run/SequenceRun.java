@@ -1,0 +1,328 @@
+package edu.insight.camerata.evaluation.run;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+import org.xml.sax.helpers.DefaultHandler;
+
+import edu.insight.camerata.evaluation.question.xml.Question;
+import edu.insight.camerata.evaluation.question.xml.QuestionsXmlHandler;
+import edu.insight.camerata.evaluation.question.xml.QuestionsXmlReader;
+import edu.insight.camerata.evaluation.utils.BasicFileTools;
+import edu.insight.camerata.evaluation.xml.Measure;
+import edu.insight.camerata.evaluation.xml.Music;
+import edu.insight.camerata.evaluation.xml.MusicReader;
+import edu.insight.camerata.evaluation.xml.MusicXmlHandler;
+import edu.insight.camerata.evaluation.xml.Note;
+import edu.insight.camerata.evaluation.xml.Part;
+import edu.insight.camerata.extractors.MeasureExtractor;
+import edu.insight.camerata.nlp.MusicEntityRecognizer;
+
+public class SequenceRun {
+
+	public static String getCompleteAnswer(Measure m, Music music1, String divisionValue, Pair answerPair) {
+		int start_beats = 2;
+		int start_beat_type = 2;
+		int end_beats = 2;
+		int end_beat_type = 2;
+		double start_divisions = Double.parseDouble(divisionValue.trim());
+		double end_divisions = Double.parseDouble(divisionValue.trim());
+		int start_bar = m.measureNumber;
+		int start_offset = 1;
+		int end_bar = m.measureNumber;
+		int end_offset = 1;
+
+		double divisions = m.computedAttributes.divisions;
+
+		double durationCounter = divisions / start_divisions;
+
+		double offset = 0;
+		///double lastDuration = 0.0;
+		for(Integer noteNumber : m.notes.keySet()) {			
+			Note note = m.notes.get(noteNumber);
+			double noteDuration = note.duration;	
+			if(note.backUp){
+				offset = offset - noteDuration / durationCounter;
+			} else if(note.chord) {
+				//offset = offset - lastDuration;
+			} else {
+				offset = offset + noteDuration / durationCounter;
+			}
+			if(m.answerPairs.contains(answerPair)) {
+				if(note == answerPair.startNote) {
+					if(note.chord){
+						//offset = offset - lastDuration;
+						start_offset = (int) (offset - (noteDuration / durationCounter)  + 1.0) ;
+					} else {
+						start_offset = (int) (offset - (noteDuration / durationCounter)  + 1.0) ;
+					}
+				}
+				if(note == answerPair.endNote) 
+					end_offset = (int) offset;				
+			}
+			//	lastDuration = noteDuration/durationCounter;				
+
+		}
+
+		StringBuffer answerString = new StringBuffer();
+
+		if(m.computedAttributes.time!=null){		
+			start_beats = (int) m.computedAttributes.time.beats;
+			start_beat_type = (int) m.computedAttributes.time.beatType;
+			end_beats = (int) m.computedAttributes.time.beats;
+			end_beat_type = (int) m.computedAttributes.time.beatType;
+
+			//			<passage end_bar="2" end_beat_type="4" end_beats="4"
+			//					end_divisions="1" end_offset="3" start_bar="2" start_beat_type="4"
+			//					start_beats="4" start_divisions="1" start_offset="1" />
+			//				
+
+			answerString.append("<passage ");
+			answerString.append("end_bar=" + "\"" + end_bar + "\" " + "end_beat_type=" + "\"" + end_beat_type  + "\" " + "end_beats=" + "\"" + end_beats + "\"\n");
+			answerString.append("end_divisions=" + "\"" + (int) end_divisions + "\" ");
+			answerString.append("end_offset=" + "\"" + end_offset + "\" ");
+			answerString.append("start_bar=" + "\"" + start_bar + "\" " + "start_beat_type=" + "\"" + start_beat_type + "\"\n");
+			answerString.append("start_beats=" + "\"" + start_beats + "\" " + "start_divisions=" + "\"" + (int) start_divisions + "\" ");
+			answerString.append("start_offset=" + "\"" + start_offset + "\" />\n");	
+		}
+		return answerString.toString().trim();
+	}
+
+	public static String getCompleteAnswerForQuestionsWithMoreNotes(Pair pair, Music music, String divisionValue) {
+		int start_beats = 2;
+		int start_beat_type = 2;
+		int end_beats = 2;
+		int end_beat_type = 2;
+		double start_divisions = Double.parseDouble(divisionValue.trim());
+		double end_divisions = Double.parseDouble(divisionValue.trim());
+		int start_bar = pair.startNote.measure.measureNumber;
+		int start_offset = 1;
+		int end_bar = pair.startNote.measure.measureNumber;
+		int end_offset = 1;
+
+		double offset = 0;
+
+		for (String partNumber : music.musicPartMap.keySet()) {
+			Part part = music.musicPartMap.get(partNumber);
+
+			for (String measureNumber : part.measures.keySet()) {
+				if(start_bar == Integer.parseInt(measureNumber.trim())){
+					Measure measure = part.measures.get(measureNumber);
+					if(measure.partNumber!=null){
+						if(measure.partNumber.equalsIgnoreCase(pair.startNote.measure.partNumber)	){
+							double divisions = measure.computedAttributes.divisions;
+							double durationCounter = divisions / start_divisions;
+							for(Integer noteNumber : measure.notes.keySet()) {			
+								Note note = measure.notes.get(noteNumber);
+								double noteDuration = note.duration;	
+								if(note.backUp){
+									offset = offset - noteDuration / durationCounter;
+								} else if(note.chord) {
+								} else {
+									offset = offset + noteDuration / durationCounter;
+								}
+								if(note == pair.startNote) {
+									if(note.chord){
+										start_offset = (int) (offset - (noteDuration / durationCounter)  + 1.0) ;
+									} else {
+										start_offset = (int) (offset - (noteDuration / durationCounter)  + 1.0) ;
+									}
+								}			
+							}
+						}
+					}
+				}
+				offset = 0;
+				if(end_bar == Integer.parseInt(measureNumber.trim())){				
+					Measure measure = part.measures.get(measureNumber);
+					if(measure.partNumber!=null){
+						if(measure.partNumber.equalsIgnoreCase(pair.endNote.measure.partNumber)){
+							double divisions = measure.computedAttributes.divisions;
+							double durationCounter = divisions / start_divisions;
+							for(Integer noteNumber : measure.notes.keySet()) {			
+								Note note = measure.notes.get(noteNumber);
+								double noteDuration = note.duration;	
+								if(note.backUp){
+									offset = offset - noteDuration / durationCounter;
+								} else if(note.chord) {
+								} else {
+									offset = offset + noteDuration / durationCounter;
+								}				
+								if(note == pair.endNote) 
+									end_offset = (int) offset;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		StringBuffer answerString = new StringBuffer();
+
+		if(pair.startNote.measure.computedAttributes.time!=null || pair.endNote.measure.computedAttributes.time!=null){
+			Measure measure = pair.startNote.measure;
+			if(pair.startNote.measure.computedAttributes.time==null){
+				measure = pair.endNote.measure;				
+			}
+
+			start_beats = (int) measure.computedAttributes.time.beats;
+			start_beat_type = (int) measure.computedAttributes.time.beatType;
+			end_beats = (int) measure.computedAttributes.time.beats;
+			end_beat_type = (int) measure.computedAttributes.time.beatType;
+
+			//			<passage end_bar="2" end_beat_type="4" end_beats="4"
+			//					end_divisions="1" end_offset="3" start_bar="2" start_beat_type="4"
+			//					start_beats="4" start_divisions="1" start_offset="1" />
+			//				
+
+			answerString.append("<passage ");
+			answerString.append("end_bar=" + "\"" + end_bar + "\" " + "end_beat_type=" + "\"" + end_beat_type  + "\" " + "end_beats=" + "\"" + end_beats + "\"\n");
+			answerString.append("end_divisions=" + "\"" + (int) end_divisions + "\" ");
+			answerString.append("end_offset=" + "\"" + end_offset + "\" ");
+			answerString.append("start_bar=" + "\"" + start_bar + "\" " + "start_beat_type=" + "\"" + start_beat_type + "\"\n");
+			answerString.append("start_beats=" + "\"" + start_beats + "\" " + "start_divisions=" + "\"" + (int) start_divisions + "\" ");
+			answerString.append("start_offset=" + "\"" + start_offset + "\" />\n");	
+		}
+		return answerString.toString().trim();
+	}
+
+
+
+	//	public static void mainOld(String[] args) {
+	//		StringBuffer answerXml = new StringBuffer();
+	//		answerXml.append("<?xml version=\"1.0\" ?>\n");
+	//		answerXml.append("<questions task=\"camerata\" year=\"2014\" task_no=\"1\"\n" + 
+	//				"runtag=\"unlp01\" organisation=\"The Insight Centre for Data Analytics\"\n" + 
+	//				"group=\"Unit for Natural Language Processing\">\n");	
+	//
+	//
+	//		List<Question> questions = new ArrayList<Question>();
+	//		String trainingXml =  "src/main/resources/data/training/training_v1.xml";
+	//		String testQuestionsXml =  "src/main/resources/data/camerata_questions_2014/camerata_questions_2014.xml";
+	//
+	//		DefaultHandler questionsHandler = new QuestionsXmlHandler(questions);
+	//		QuestionsXmlReader questionsReader = new QuestionsXmlReader(testQuestionsXml);
+	//		questionsReader.read(questionsHandler);
+	//		System.out.println(questions);
+	//		for(Question question : questions){
+	//			answerXml.append("<question divisions=" + "\"" + question.divisions + "\"" + " music_file=\"" + question.musicXmlFile + "\" " + 
+	//					"number=\"" + question.number + "\">\n");
+	//			answerXml.append("<text>" + question.question + "</text>\n");
+	//			answerXml.append("<answer>\n");
+	//			Music music = new Music();			
+	//			String questionString = question.question;
+	//			System.out.println(questionString);
+	//			DefaultHandler musicHandler = new MusicXmlHandler(music);
+	//			MusicReader musicReader = new MusicReader("src/main/resources/data/camerata_questions_2014/" + question.musicXmlFile);
+	//			musicReader.read(musicHandler);	
+	//
+	//			Pitch pitch = MusicEntityRecognizer.recognizePitchEntities(questionString);
+	//
+	//
+	//			if(pitch.entityRecognized) {
+	//				Set<Measure> measures = PitchExtractor.getPitch(music, pitch);
+	//				for(Measure measure : measures) {
+	//					for(Pair answerPair : measure.answerPairs){
+	//						String passage = getCompleteAnswer(measure, music, question.divisions, answerPair);
+	//						answerXml.append(passage);				
+	//					}
+	//				}
+	//			}
+	//			answerXml.append("</answer>\n");
+	//			answerXml.append("</question>\n");
+	//		}
+	//		answerXml.append("</questions>");
+	//
+	//		BasicFileTools.writeFile("src/main/resources/data/me14camerata_unlp01.xml", answerXml.toString().trim());
+	//	}
+
+	public static void main(String[] args) {
+		StringBuffer answerXml = new StringBuffer();
+		answerXml.append("<?xml version=\"1.0\" ?>\n");
+		answerXml.append("<questions task=\"camerata\" year=\"2014\" task_no=\"1\"\n" + 
+				"runtag=\"unlp01\" organisation=\"The Insight Centre for Data Analytics\"\n" + 
+				"group=\"Unit for Natural Language Processing\">\n");	
+
+		List<Question> questions = new ArrayList<Question>();
+		//	String trainingXml =  "src/main/resources/data/training/training_v1.xml";
+		String testQuestionsXml =  "src/main/resources/data/camerata_questions_2014/camerata_questions_2014.xml";
+		DefaultHandler questionsHandler = new QuestionsXmlHandler(questions);
+		QuestionsXmlReader questionsReader = new QuestionsXmlReader(testQuestionsXml);
+		questionsReader.read(questionsHandler);
+		System.out.println(questions);
+		for(Question question : questions) {
+			if(question.number.equals("87")){
+				System.out.println("debug");
+			}
+			answerXml.append("<question divisions=" + "\"" + question.divisions + "\"" + " music_file=\"" + question.musicXmlFile + "\" " + 
+					"number=\"" + question.number + "\">\n");
+			answerXml.append("<text>" + question.question + "</text>\n");
+			answerXml.append("<answer>\n");
+			Music music = new Music();			
+			String questionString = question.question;
+			System.out.println(questionString);
+			DefaultHandler musicHandler = new MusicXmlHandler(music);
+			MusicReader musicReader = new MusicReader("src/main/resources/data/camerata_questions_2014/" + question.musicXmlFile);
+			musicReader.read(musicHandler);	
+
+			//Set<Note> notes = MusicEntityRecognizer.extractNotes(questionString);
+			List<Note> notes = MusicEntityRecognizer.recognizeNoteTimesAndPitches(questionString);
+			String instrumentName = MusicEntityRecognizer.extractInstrument(questionString);
+			String staff = MusicEntityRecognizer.extractStaff(questionString);
+			String clef = MusicEntityRecognizer.extractClef(questionString);
+
+			//			Set<Measure> answerMeasures = new HashSet<Measure>();
+
+			//			List<Set<Measure>> answerSets  = new ArrayList<Set<Measure>>();
+
+			for(Note note : notes) {
+				if(note.entityRecognized) {
+					note.staff = staff;
+				}
+			}
+
+			if(notes.size()>1){
+				Set<Pair> pairs = MeasureExtractor.getMeasuresForMultipleNotes(music, notes, instrumentName, clef);
+				System.out.println(pairs.size());
+
+				//			for(Note note : notes) {
+				//				if(note.entityRecognized) {
+				//					note.staff = staff;					
+				//					Set<Measure> measures = MeasureExtractor.getMeasures(music, note, instrumentName, clef);
+				//					answerSets.add(measures);
+				//				}
+				//			}
+				//			
+				//			if(!answerSets.isEmpty()){
+				//				System.out.println(answerSets.get(0).size());
+				//				Set<Measure> intersection = new HashSet<Measure>(answerSets.get(0));
+				//				for(Set<Measure> set : answerSets){
+				//					System.out.println(set.size());
+				//					intersection.retainAll(set);
+				//				}
+				//				System.out.println(intersection.size());
+				//				answerMeasures.addAll(intersection);
+				//			}
+				Set<String> answerPassages = new HashSet<String>();
+
+				for(Pair pair : pairs) {
+					String passage = getCompleteAnswerForQuestionsWithMoreNotes(pair, music, question.divisions);
+					answerPassages.add(passage);
+				}
+
+				for(String passage : answerPassages){
+					answerXml.append(passage);		
+				}
+			}
+
+			answerXml.append("</answer>\n");
+			answerXml.append("</question>\n");
+		}
+		answerXml.append("</questions>");
+
+		BasicFileTools.writeFile("src/main/resources/data/me14camerata_unlp01.xml", answerXml.toString().trim());
+	}
+
+}

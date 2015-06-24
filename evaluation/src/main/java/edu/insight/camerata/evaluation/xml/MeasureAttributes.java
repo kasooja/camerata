@@ -9,7 +9,7 @@ public class MeasureAttributes {
 	public List<Clef> clefs;
 	public Key key;
 	public Time time;
-	public double staves;
+	public double staves = -1;
 
 	public MeasureAttributes() {
 		clefs = new ArrayList<Clef>();

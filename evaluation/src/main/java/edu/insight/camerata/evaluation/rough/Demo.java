@@ -1,7 +1,8 @@
 package edu.insight.camerata.evaluation.rough;
 
-import org.jfugue.Pattern;
-import org.jfugue.Player;
+import org.jfugue.pattern.Pattern;
+import org.jfugue.player.Player;
+
 
 public class Demo {
 	

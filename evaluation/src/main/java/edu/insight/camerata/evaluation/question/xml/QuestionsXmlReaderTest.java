@@ -1,4 +1,4 @@
-package edu.insight.camerata.evaluation.run;
+package edu.insight.camerata.evaluation.question.xml;
 
 
 import java.util.ArrayList;
@@ -8,9 +8,10 @@ import org.xml.sax.helpers.DefaultHandler;
 
 public class QuestionsXmlReaderTest {	
 	public static List<Question> questions = new ArrayList<Question>();
-	public static String trainingXml =  "src/main/resources/data/training/training_v1.xml";
-	public static String testQuestionsXml =  "src/main/resources/data/camerata_questions_2014.xml";
-
+	//public static String trainingXml =  "src/main/resources/data/training/training_v1.xml";
+	//public static String testQuestionsXml =  "src/main/resources/data/camerata_questions_2014.xml";
+	public static String testQuestionsXml =  "src/main/resources/data/Submission/camerata_gold_standard_2014.xml";
+	
 	public static void main(String[] args) {		
 		DefaultHandler handler = new QuestionsXmlHandler(questions);
 		QuestionsXmlReader lReader = new QuestionsXmlReader(testQuestionsXml);

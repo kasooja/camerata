@@ -1,6 +1,7 @@
 package edu.insight.camerata.evaluation.xml;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -13,12 +14,14 @@ public class Measure {
 	public int measureNumber;
 	public MeasureAttributes attributes;
 	public MeasureAttributes computedAttributes;
-	public List<Pair> answerPairs = new ArrayList<Pair>(); 
-	
+	public List<Pair> answerPairs = new ArrayList<Pair>();
+	public String partNumber = null;
+	public LinkedHashMap<Double, List<Note>> positionNotes = new LinkedHashMap<Double, List<Note>>();
+
 	public Measure() {
 		notes = new LinkedHashMap<Integer, Note>();
 	}
-	
+
 	@Override
 	public String toString() {
 		StringBuffer buffer = new StringBuffer();
@@ -32,7 +35,7 @@ public class Measure {
 		}
 		return buffer.toString().trim();
 	}
-	
-	
+
+
 
 }
